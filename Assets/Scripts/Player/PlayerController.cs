@@ -13,9 +13,9 @@ public class PlayerController : MonoBehaviour
     public float airDeceleration = 50f;
 
     [Header("Jump")]
-    public float jumpForce = 14f;
+    public float jumpForce = 18f;
     public float gravity = -35f;
-    public float maxFallSpeed = -25f;
+    public float maxFallSpeed = -18f;
 
     [Header("Better Jump")]
     public float fallMultiplier = 2.5f;
@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
 
     [Header("Jump Assist")]
     public float coyoteTime = 0.12f;
-    public float jumpBufferTime = 0.12f;
 
     private Rigidbody rb;
     private PlayerInput playerInput;
@@ -32,7 +31,6 @@ public class PlayerController : MonoBehaviour
     private Vector3 velocity;
 
     private float coyoteCounter;
-    private float jumpBufferCounter;
 
     void Awake()
     {
@@ -51,7 +49,7 @@ public class PlayerController : MonoBehaviour
     {
         groundCheck.CheckGround();
 
-        UpdateJumpTimers();
+        UpdateCoyoteTime();
 
         HandleJump();
     }
@@ -96,11 +94,10 @@ public class PlayerController : MonoBehaviour
 
     void HandleJump()
     {
-        if (jumpBufferCounter > 0f && coyoteCounter > 0f)
+        if (playerInput.JumpPressed && coyoteCounter > 0f)
         {
             velocity.y = jumpForce;
 
-            jumpBufferCounter = 0f;
             coyoteCounter = 0f;
 
             playerInput.ResetJump();
@@ -129,7 +126,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void UpdateJumpTimers()
+    void UpdateCoyoteTime()
     {
         if (groundCheck.IsGrounded)
         {
@@ -138,15 +135,6 @@ public class PlayerController : MonoBehaviour
         else
         {
             coyoteCounter -= Time.deltaTime;
-        }
-
-        if (playerInput.JumpPressed)
-        {
-            jumpBufferCounter = jumpBufferTime;
-        }
-        else
-        {
-            jumpBufferCounter -= Time.deltaTime;
         }
     }
 
