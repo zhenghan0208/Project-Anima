@@ -1,14 +1,20 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Spike : MonoBehaviour
 {
+    [Header("Damage")]
+    public int damage = 1;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player"))
+            return;
+
+        PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+
+        if (playerHealth != null)
         {
-            SceneManager.LoadScene(
-                SceneManager.GetActiveScene().buildIndex);
+            playerHealth.TakeDamage(damage, transform.position);
         }
     }
 }

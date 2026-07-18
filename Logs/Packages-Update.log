@@ -50,3 +50,26 @@ The following packages were updated:
   com.unity.test-framework from version 1.4.2 to 1.6.0
   com.unity.timeline from version 1.8.6 to 1.8.10
   com.unity.visualscripting from version 1.9.1 to 1.9.9
+
+=== Sat Jul 18 22:46:48 2026
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.inputsystem from version 1.8.2 to 1.18.0
+  com.unity.collections from version 2.4.1 to 2.6.2
+  com.unity.render-pipelines.universal from version 17.0.3 to 17.3.0
+  com.unity.render-pipelines.core from version 17.0.3 to 17.3.0
+The following packages were removed:
+  com.unity.rendering.light-transport@1.0.1
+
+=== Sat Jul 18 22:46:48 2026
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.collections@2.6.2
+  com.unity.render-pipelines.core@17.3.0
+  com.unity.render-pipelines.universal-config@17.0.3
