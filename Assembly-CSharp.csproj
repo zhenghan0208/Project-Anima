@@ -50,12 +50,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Lobby\LevelPortal.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Ability\AbilityPopupUI.cs" />
+    <Compile Include="Assets\Scripts\Background\CloudLoop.cs" />
     <Compile Include="Assets\Scripts\Ability\AbilityPickup.cs" />
     <Compile Include="Assets\Scripts\Lobby\PlayerInteract.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\FallingHazard.cs" />
+    <Compile Include="Assets\Scripts\Background\ParallaxLayer.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\FallingHazardSpawner.cs" />
     <Compile Include="Assets\Scripts\Player\GroundCheck.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\BreakableBlock.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Lobby\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
@@ -64,7 +70,10 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Lobby\InteractUI.cs" />
-    <Compile Include="Assets\Scripts\Spike\Spike.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\PhasePlatform.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAnimator.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\FallingPlatform.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\Spike.cs" />
     <Compile Include="Assets\Scripts\Player\DeathZone.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAbility.cs" />
   </ItemGroup>
@@ -1155,6 +1164,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj" />
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj" />
     <ProjectReference Include="UnityEditor.UI.Analytics.csproj" />
     <ProjectReference Include="Unity.TextMeshPro.csproj" />
     <ProjectReference Include="Unity.Rendering.LightTransport.Editor.csproj" />
@@ -1198,9 +1208,9 @@
     <ProjectReference Include="Unity.Multiplayer.Center.Common.csproj" />
     <ProjectReference Include="Unity.Burst.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj" />
+    <ProjectReference Include="Unity.StarterAssets.csproj" />
     <ProjectReference Include="Unity.InternalAPIEngineBridge.004.csproj" />
     <ProjectReference Include="Unity.Multiplayer.Center.Editor.csproj" />
-    <ProjectReference Include="Unity.StarterAssets.csproj" />
     <ProjectReference Include="Unity.StarterAssets.Editor.csproj" />
     <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj" />
     <ProjectReference Include="Unity.VisualScripting.State.csproj" />

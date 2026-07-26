@@ -5,7 +5,7 @@ public class PlayerAttack : MonoBehaviour
     [Header("Attack")]
     public Transform attackPoint;
     public float attackRadius = 1f;
-    public LayerMask enemyLayer;
+    public LayerMask attackLayer;
 
     [Header("Cooldown")]
     public float attackCooldown = 0.3f;
@@ -38,15 +38,27 @@ public class PlayerAttack : MonoBehaviour
     {
         attackTimer = attackCooldown;
 
-        Collider[] enemies = Physics.OverlapSphere(attackPoint.position, attackRadius, enemyLayer);
+        Collider[] hits = Physics.OverlapSphere(
+            attackPoint.position,
+            attackRadius,
+            attackLayer);
 
-        foreach (Collider enemy in enemies)
+        foreach (Collider hit in hits)
         {
-            EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+            // Enemy
+            EnemyHealth enemyHealth = hit.GetComponent<EnemyHealth>();
 
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(1, transform.position);
+            }
+
+            // Breakable Block
+            BreakableBlock breakableBlock = hit.GetComponent<BreakableBlock>();
+
+            if (breakableBlock != null)
+            {
+                breakableBlock.TakeDamage(1);
             }
         }
     }
@@ -57,7 +69,6 @@ public class PlayerAttack : MonoBehaviour
             return;
 
         Gizmos.color = Color.red;
-
         Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
     }
 }

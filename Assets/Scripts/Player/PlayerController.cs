@@ -293,4 +293,9 @@ public class PlayerController : MonoBehaviour
             isDashing = false;
         }
     }
+
+    public float GetMoveSpeed()
+    {
+        return velocity.x;
+    }
 }
