@@ -49,24 +49,33 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Lobby\NotePickup.cs" />
     <Compile Include="Assets\Scripts\Lobby\LevelPortal.cs" />
     <Compile Include="Assets\Scripts\Obstacles\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
-    <Compile Include="Assets\Scripts\Ability\AbilityPopupUI.cs" />
+    <Compile Include="Assets\Scripts\AudioManager\ButtonSFX.cs" />
     <Compile Include="Assets\Scripts\Background\CloudLoop.cs" />
+    <Compile Include="Assets\Scripts\AudioManager\SceneMusic.cs" />
     <Compile Include="Assets\Scripts\Ability\AbilityPickup.cs" />
+    <Compile Include="Assets\Scripts\Lobby\TopDownPlayerController.cs" />
     <Compile Include="Assets\Scripts\Lobby\PlayerInteract.cs" />
+    <Compile Include="Assets\Scripts\AudioManager\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Obstacles\FallingHazard.cs" />
     <Compile Include="Assets\Scripts\Background\ParallaxLayer.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Obstacles\FallingHazardSpawner.cs" />
     <Compile Include="Assets\Scripts\Player\GroundCheck.cs" />
+    <Compile Include="Assets\Scripts\Ability\StageClearUI.cs" />
     <Compile Include="Assets\Scripts\Obstacles\BreakableBlock.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Lobby\IInteractable.cs" />
+    <Compile Include="Assets\Scripts\Lobby\NoteUI.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Lobby\TopDownAnimator.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Lobby\InteractUI.cs" />
@@ -74,6 +83,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerAnimator.cs" />
     <Compile Include="Assets\Scripts\Obstacles\FallingPlatform.cs" />
     <Compile Include="Assets\Scripts\Obstacles\Spike.cs" />
+    <Compile Include="Assets\Scripts\Ability\AbilityType.cs" />
     <Compile Include="Assets\Scripts\Player\DeathZone.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAbility.cs" />
   </ItemGroup>

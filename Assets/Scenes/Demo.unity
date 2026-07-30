@@ -546,6 +546,8 @@ MonoBehaviour:
   dashSpeed: 40
   dashDuration: 0.15
   dashCooldown: 0.5
+  isCelebrating: 0
+  celebrationJumpInterval: 0.4
 --- !u!114 &201697300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,9 +599,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   attackPoint: {fileID: 35600448}
   attackRadius: 1
-  enemyLayer:
+  attackLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   attackCooldown: 0.3
 --- !u!114 &201697303
 MonoBehaviour:
@@ -859,12 +861,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponPickup
   abilityType: 0
-  popupUI: {fileID: 1441494644}
-  popupMessage: 'Weapon Acquired!
-
-
-
-    Left Click to Attack'
   pickupModel: {fileID: 1003668821}
   rotateSpeed: 50
   floatHeight: 0.3
@@ -993,11 +989,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponPickup
   abilityType: 1
-  popupUI: {fileID: 1441494644}
-  popupMessage: 'Double Jump Unlocked!
-
-
-    Press Space Again While Airborne'
   pickupModel: {fileID: 817427549}
   rotateSpeed: 50
   floatHeight: 0.3
@@ -4185,11 +4176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AbilityPickup
   abilityType: 2
-  popupUI: {fileID: 1441494644}
-  popupMessage: 'Dash Unlocked!
-
-
-    Press Left Shift to Dash'
   pickupModel: {fileID: 836505085}
   rotateSpeed: 50
   floatHeight: 0.3

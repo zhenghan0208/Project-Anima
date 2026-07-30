@@ -9,17 +9,17 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
 
     [Header("Heart UI")]
-    public Image[] hearts;
-    public Sprite fullHeart;
-    public Sprite emptyHeart;
-
+    public GameObject[] hearts;
     private bool isDead;
 
     private PlayerController playerController;
+    private PlayerAnimator playerAnimator;
 
     void Start()
     {
         playerController = GetComponent<PlayerController>();
+
+        playerAnimator = GetComponentInChildren<PlayerAnimator>();
 
         currentHealth = maxHealth;
 
@@ -32,6 +32,11 @@ public class PlayerHealth : MonoBehaviour
             return;
 
         playerController.ApplyKnockback(hitPoint);
+
+        if (playerAnimator != null)
+        {
+            playerAnimator.PlayHit();
+        }
 
         currentHealth -= damage;
 
@@ -60,14 +65,7 @@ public class PlayerHealth : MonoBehaviour
     {
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (i < currentHealth)
-            {
-                hearts[i].sprite = fullHeart;
-            }
-            else
-            {
-                hearts[i].sprite = emptyHeart;
-            }
+            hearts[i].SetActive(i < currentHealth);
         }
     }
 

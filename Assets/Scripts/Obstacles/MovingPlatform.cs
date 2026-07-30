@@ -8,10 +8,14 @@ public class MovingPlatform : MonoBehaviour
     public float speed = 2f;
 
     private Transform target;
+    private Vector3 lastPosition;
+
+    public Vector3 PlatformVelocity { get; private set; }
 
     void Start()
     {
         target = pointB;
+        lastPosition = transform.position;
     }
 
     void Update()
@@ -23,25 +27,11 @@ public class MovingPlatform : MonoBehaviour
 
         if (Vector3.Distance(transform.position, target.position) < 0.05f)
         {
-            target = target == pointA
-                ? pointB
-                : pointA;
+            target = target == pointA ? pointB : pointA;
         }
-    }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.CompareTag("Player"))
-        {
-            collision.transform.SetParent(transform);
-        }
-    }
+        PlatformVelocity = (transform.position - lastPosition) / Time.deltaTime;
 
-    void OnCollisionExit(Collision collision)
-    {
-        if (collision.collider.CompareTag("Player"))
-        {
-            collision.transform.SetParent(null);
-        }
+        lastPosition = transform.position;
     }
 }

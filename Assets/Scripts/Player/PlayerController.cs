@@ -51,6 +51,11 @@ public class PlayerController : MonoBehaviour
     private float dashTimer;
     private float dashCooldownTimer;
 
+    [Header("Stage Clear")]
+    public bool isCelebrating;
+    public float celebrationJumpInterval = 0.4f;
+    private float celebrationTimer;
+
     private Rigidbody rb;
     private PlayerInput playerInput;
     private GroundCheck groundCheck;
@@ -73,6 +78,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (isCelebrating)
+        {
+            HandleCelebration();
+            return;
+        }
+
         groundCheck.CheckGround();
 
         UpdateCoyoteTime();
@@ -118,11 +129,21 @@ public class PlayerController : MonoBehaviour
 
         velocity.y = Mathf.Max(velocity.y, maxFallSpeed);
 
-        rb.linearVelocity = velocity;
+        Vector3 finalVelocity = velocity;
+
+        if (groundCheck.CurrentPlatform != null)
+        {
+            finalVelocity += groundCheck.CurrentPlatform.PlatformVelocity;
+        }
+
+        rb.linearVelocity = finalVelocity;
     }
 
     void HandleMovement()
     {
+        if (isCelebrating)
+            return;
+
         if (isDashing)
             return;
 
@@ -175,6 +196,9 @@ public class PlayerController : MonoBehaviour
 
     void HandleJump()
     {
+        if (isCelebrating)
+            return;
+
         if (playerInput.JumpPressed)
         {
             if (coyoteCounter > 0f)
@@ -184,6 +208,8 @@ public class PlayerController : MonoBehaviour
                 coyoteCounter = 0f;
 
                 playerInput.ResetJump();
+
+                PlayJumpSFX();
             }
             else if (playerAbility.hasDoubleJump && canDoubleJump)
             {
@@ -192,12 +218,22 @@ public class PlayerController : MonoBehaviour
                 canDoubleJump = false;
 
                 playerInput.ResetJump();
+
+                PlayJumpSFX();
             }
         }
 
         if (!playerInput.JumpHeld && velocity.y > 0)
         {
             velocity.y += gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
+    void PlayJumpSFX()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.jumpSFX);
         }
     }
 
@@ -253,6 +289,9 @@ public class PlayerController : MonoBehaviour
 
     void HandleDash()
     {
+        if (isCelebrating)
+            return;
+
         if (dashCooldownTimer > 0)
         {
             dashCooldownTimer -= Time.deltaTime;
@@ -297,5 +336,29 @@ public class PlayerController : MonoBehaviour
     public float GetMoveSpeed()
     {
         return velocity.x;
+    }
+
+    public void StartCelebration()
+    {
+        isCelebrating = true;
+        celebrationTimer = 0f;
+    }
+
+    void HandleCelebration()
+    {
+        groundCheck.CheckGround();
+
+        velocity.x = 0f;
+
+        if (groundCheck.IsGrounded && velocity.y <= 0f)
+        {
+            celebrationTimer -= Time.deltaTime;
+
+            if (celebrationTimer <= 0f)
+            {
+                velocity.y = jumpForce;
+                celebrationTimer = celebrationJumpInterval;
+            }
+        }
     }
 }

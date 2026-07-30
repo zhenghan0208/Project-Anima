@@ -25,4 +25,9 @@ public class PlayerAnimator : MonoBehaviour
             "Grounded",
             groundCheck.IsGrounded);
     }
+
+    public void PlayHit()
+    {
+        animator.SetTrigger("Hit");
+    }
 }

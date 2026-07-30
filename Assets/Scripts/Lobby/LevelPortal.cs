@@ -7,7 +7,7 @@ public class LevelPortal : MonoBehaviour, IInteractable
     public string sceneName;
 
     [Header("UI")]
-    public string interactText = "Press E to Enter";
+    public string interactText = "Press E to Interact";
 
     public void Interact()
     {

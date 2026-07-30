@@ -3,7 +3,7 @@ using UnityEngine;
 public class FallingHazardSpawner : MonoBehaviour
 {
     [Header("Spawn")]
-    public GameObject hazardPrefab;
+    public GameObject[] hazardPrefabs;
 
     public Transform leftPoint;
     public Transform rightPoint;
@@ -32,11 +32,20 @@ public class FallingHazardSpawner : MonoBehaviour
 
     void SpawnHazard()
     {
+        if (hazardPrefabs == null || hazardPrefabs.Length == 0)
+            return;
+
         float randomX = Random.Range(leftPoint.position.x, rightPoint.position.x);
 
-        Vector3 spawnPos = new Vector3(randomX, transform.position.y, transform.position.z);
+        Vector3 spawnPos = new Vector3(
+            randomX,
+            transform.position.y,
+            transform.position.z);
 
-        Instantiate(hazardPrefab, spawnPos, Quaternion.identity);
+        GameObject randomPrefab = hazardPrefabs[
+            Random.Range(0, hazardPrefabs.Length)];
+
+        Instantiate(randomPrefab, spawnPos, Quaternion.identity);
     }
 
     void ResetTimer()

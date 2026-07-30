@@ -2,21 +2,8 @@ using UnityEngine;
 
 public class AbilityPickup : MonoBehaviour
 {
-    public enum AbilityType
-    {
-        Weapon,
-        DoubleJump,
-        Dash
-    }
-
     [Header("Ability")]
     public AbilityType abilityType;
-
-    [Header("UI")]
-    public AbilityPopupUI popupUI;
-
-    [TextArea]
-    public string popupMessage;
 
     [Header("Visual")]
     public GameObject pickupModel;
@@ -71,19 +58,18 @@ public class AbilityPickup : MonoBehaviour
                 break;
         }
 
-        if (popupUI != null)
-        {
-            popupUI.ShowPopup(popupMessage);
-        }
-
         // TODO
         // Play Pickup Sound
+        // TODO
+        // Play Pickup Effect
 
-        if (pickupModel != null)
+        StageClearUI stageClearUI = FindFirstObjectByType<StageClearUI>();
+
+        if (stageClearUI != null)
         {
-            pickupModel.SetActive(true);
+            stageClearUI.ShowStageClear(abilityType);
         }
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
