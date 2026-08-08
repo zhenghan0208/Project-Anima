@@ -1,5 +1,4 @@
 using System.Collections;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,8 +6,6 @@ public class StageClearUI : MonoBehaviour
 {
     [Header("UI")]
     public GameObject panel;
-    public TMP_Text abilityText;
-    private bool isShowing;
 
     [Header("Next Level")]
     public string nextSceneName;
@@ -16,6 +13,8 @@ public class StageClearUI : MonoBehaviour
 
     [Header("Audio")]
     public AudioClip stageClearMusic;
+
+    private bool isShowing;
 
     void Start()
     {
@@ -31,7 +30,7 @@ public class StageClearUI : MonoBehaviour
 
         panel.SetActive(true);
 
-        if (AudioManager.Instance != null)
+        if (AudioManager.Instance != null && stageClearMusic != null)
         {
             AudioManager.Instance.PlayMusic(stageClearMusic);
         }
@@ -42,30 +41,6 @@ public class StageClearUI : MonoBehaviour
         {
             player.StartCelebration();
         }
-
-        string abilityName = "";
-
-        switch (ability)
-        {
-            case AbilityType.Weapon:
-                abilityName = "Weapon";
-                break;
-
-            case AbilityType.DoubleJump:
-                abilityName = "Double Jump";
-                break;
-
-            case AbilityType.Dash:
-                abilityName = "Dash";
-                break;
-        }
-
-        abilityText.text =
-            "Stage Clear!\n\n" +
-            "------------------------\n\n" +
-            "New Ability Unlocked!\n\n" +
-            abilityName +
-            "\n\n------------------------";
 
         StartCoroutine(StageClearRoutine());
     }

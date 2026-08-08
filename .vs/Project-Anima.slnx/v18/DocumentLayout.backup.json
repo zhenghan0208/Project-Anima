@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\ability\\stageclearui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ability\\stageclearui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\phaseplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\phaseplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\lobby\\levelportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lobby\\levelportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\ability\\stageclearui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ability\\stageclearui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\audiomanager\\scenemusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\fallinghazard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\phaseplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\phaseplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\background\\cloudloop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\background\\cloudloop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -146,24 +146,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ButtonSFX.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\AudioManager\\ButtonSFX.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager\\ButtonSFX.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\AudioManager\\ButtonSFX.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AudioManager\\ButtonSFX.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T07:50:14.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "NoteUI.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Lobby\\NoteUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lobby\\NoteUI.cs",
@@ -171,12 +158,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Lobby\\NoteUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T06:10:30.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-30T06:10:30.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "NotePickup.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Lobby\\NotePickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lobby\\NotePickup.cs",
@@ -184,12 +170,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Lobby\\NotePickup.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAgwC0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T06:09:30.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-30T06:09:30.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\AudioManager\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager\\AudioManager.cs",
@@ -197,12 +182,11 @@
               "RelativeToolTip": "Assets\\Scripts\\AudioManager\\AudioManager.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAiwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T05:28:35.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-30T05:28:35.535Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "TopDownPlayerController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Lobby\\TopDownPlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lobby\\TopDownPlayerController.cs",
@@ -210,37 +194,61 @@
               "RelativeToolTip": "Assets\\Scripts\\Lobby\\TopDownPlayerController.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAkwHAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T13:34:22.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T13:34:22.812Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "StageClearUI.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Ability\\StageClearUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ability\\StageClearUI.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Ability\\StageClearUI.cs",
               "RelativeToolTip": "Assets\\Scripts\\Ability\\StageClearUI.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAzwCQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T16:13:52.663Z"
+              "WhenOpened": "2026-07-28T16:13:52.663Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAowO0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAQwO0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T07:22:57.111Z",
+              "WhenOpened": "2026-07-22T07:22:57.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PhasePlatform.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\PhasePlatform.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\PhasePlatform.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\PhasePlatform.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\PhasePlatform.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T06:05:50.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
+              "Title": "ButtonSFX.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\AudioManager\\ButtonSFX.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager\\ButtonSFX.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\AudioManager\\ButtonSFX.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AudioManager\\ButtonSFX.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-30T07:50:14.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MainMenuManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\MainMenu\\MainMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\MainMenuManager.cs",
@@ -252,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\PauseMenu\\PauseMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenu\\PauseMenu.cs",
@@ -260,12 +268,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PauseMenu\\PauseMenu.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAgwDcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T14:55:05.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T14:55:05.302Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SceneMusic.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\AudioManager\\SceneMusic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager\\SceneMusic.cs",
@@ -277,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "LevelPortal.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Lobby\\LevelPortal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lobby\\LevelPortal.cs",
@@ -289,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "TopDownAnimator.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Lobby\\TopDownAnimator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lobby\\TopDownAnimator.cs",
@@ -301,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealth.cs",
@@ -313,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "AbilityType.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Ability\\AbilityType.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ability\\AbilityType.cs",
@@ -325,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "BreakableBlock.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\BreakableBlock.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\BreakableBlock.cs",
@@ -337,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "PlayerAnimator.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerAnimator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAnimator.cs",
@@ -349,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "FallingHazardSpawner.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingHazardSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\FallingHazardSpawner.cs",
@@ -361,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ThirdPersonController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Starter Assets\\Runtime\\ThirdPersonController\\Scripts\\ThirdPersonController.cs",
               "RelativeDocumentMoniker": "Assets\\Starter Assets\\Runtime\\ThirdPersonController\\Scripts\\ThirdPersonController.cs",
@@ -373,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "GroundCheck.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\GroundCheck.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\GroundCheck.cs",
@@ -385,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AbilityPickup.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Ability\\AbilityPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ability\\AbilityPickup.cs",
@@ -397,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAttack.cs",
@@ -409,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "FallingPlatform.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingPlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\FallingPlatform.cs",
@@ -421,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "MovingPlatform.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\MovingPlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\MovingPlatform.cs",
@@ -433,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "FallingHazard.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingHazard.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\FallingHazard.cs",
@@ -442,18 +449,6 @@
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-22T06:31:20.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PhasePlatform.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\PhasePlatform.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\PhasePlatform.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\PhasePlatform.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\PhasePlatform.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T06:05:50.705Z"
             },
             {
               "$type": "Document",

@@ -2,26 +2,20 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
-[RequireComponent(typeof(Renderer))]
+[RequireComponent(typeof(Animator))]
 public class PhasePlatform : MonoBehaviour
 {
-    [Header("Materials")]
-    public Material solidMaterial;
-    public Material phaseMaterial;
-
     [Header("Timing")]
     public float solidTime = 1f;
     public float phaseTime = 1f;
 
     private Collider platformCollider;
-    private Renderer platformRenderer;
-
-    private bool isSolid = true;
+    private Animator animator;
 
     void Awake()
     {
         platformCollider = GetComponent<Collider>();
-        platformRenderer = GetComponent<Renderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Start()
@@ -46,13 +40,8 @@ public class PhasePlatform : MonoBehaviour
 
     void SetSolid(bool solid)
     {
-        isSolid = solid;
-
         platformCollider.enabled = solid;
 
-        if (platformRenderer != null)
-        {
-            platformRenderer.material = solid ? solidMaterial : phaseMaterial;
-        }
+        animator.SetBool("Solid", solid);
     }
 }
