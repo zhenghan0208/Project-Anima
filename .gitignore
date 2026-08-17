@@ -229,3 +229,4 @@ Build/3d_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll
 Build/3d_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll
 Build/3d_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
 Build/3d_BurstDebugInformation_DoNotShip/Data/Plugins/x86_64/lib_burst_generated.txt
+*.zip

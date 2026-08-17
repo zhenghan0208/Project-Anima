@@ -15,10 +15,6 @@ public class AbilityPickup : MonoBehaviour
 
     private Vector3 startPosition;
 
-    // TODO
-    // AudioSource
-    // Pickup Sound
-
     void Start()
     {
         startPosition = transform.position;
@@ -58,10 +54,7 @@ public class AbilityPickup : MonoBehaviour
                 break;
         }
 
-        // TODO
-        // Play Pickup Sound
-        // TODO
-        // Play Pickup Effect
+        PlayPickUpSFX();
 
         StageClearUI stageClearUI = FindFirstObjectByType<StageClearUI>();
 
@@ -71,5 +64,13 @@ public class AbilityPickup : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+    }
+
+    void PlayPickUpSFX()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.pickUpSFX);
+        }
     }
 }

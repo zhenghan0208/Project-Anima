@@ -5,11 +5,8 @@ public class BreakableBlock : MonoBehaviour
     [Header("Health")]
     public int health = 1;
 
-    // TODO
-    // Particle Effect
-
-    // TODO
-    // Sound Effect
+    [Header("Particle Effect")]
+    public GameObject destroyParticle;
 
     public void TakeDamage(int damage)
     {
@@ -23,9 +20,32 @@ public class BreakableBlock : MonoBehaviour
 
     void Break()
     {
-        // TODO
-        // Play Effect
+        PlayDestroySFX();
+
+        PlayDestroyParticle();
 
         Destroy(gameObject);
+    }
+
+    void PlayDestroySFX()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX(
+                AudioManager.Instance.destroySFX
+            );
+        }
+    }
+
+    void PlayDestroyParticle()
+    {
+        if (destroyParticle == null)
+            return;
+
+        Instantiate(
+            destroyParticle,
+            transform.position,
+            Quaternion.identity
+        );
     }
 }

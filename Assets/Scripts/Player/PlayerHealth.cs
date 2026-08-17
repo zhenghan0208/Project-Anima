@@ -44,6 +44,8 @@ public class PlayerHealth : MonoBehaviour
 
         UpdateHealthUI();
 
+        PlayHurtSFX();
+
         if (currentHealth <= 0)
         {
             Die();
@@ -85,6 +87,24 @@ public class PlayerHealth : MonoBehaviour
     {
         isDead = true;
 
+        PlayDieSFX();
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    void PlayDieSFX()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.dieSFX);
+        }
+    }
+
+    void PlayHurtSFX()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.hurtSFX);
+        }
     }
 }

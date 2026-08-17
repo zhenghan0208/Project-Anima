@@ -16,7 +16,13 @@ public class AudioManager : MonoBehaviour
 
     [Header("SFX")]
     public AudioClip buttonClickSFX;
+    public AudioClip buttonHoverSFX;
     public AudioClip jumpSFX;
+    public AudioClip dieSFX;
+    public AudioClip hurtSFX;
+    public AudioClip pickUpSFX;
+    public AudioClip attackSFX;
+    public AudioClip destroySFX;
 
     void Awake()
     {
@@ -91,10 +97,5 @@ public class AudioManager : MonoBehaviour
     {
         musicVolume = PlayerPrefs.GetFloat("MusicVolume", 1f);
         sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 1f);
-    }
-
-    public void PlayButtonClick()
-    {
-        PlaySFX(buttonClickSFX);
     }
 }

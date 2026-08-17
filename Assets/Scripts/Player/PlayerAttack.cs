@@ -5,20 +5,24 @@ public class PlayerAttack : MonoBehaviour
     [Header("Attack")]
     public Transform attackPoint;
     public float attackRadius = 1f;
-    public LayerMask attackLayer;
+
+    [Header("Layers")]
+    public LayerMask enemyLayer;
+    public LayerMask groundLayer;
 
     [Header("Cooldown")]
     public float attackCooldown = 0.3f;
 
     private PlayerAbility playerAbility;
-    private PlayerController playerController;
+    private PlayerAnimator playerAnimator;
 
     private float attackTimer;
 
     void Start()
     {
         playerAbility = GetComponent<PlayerAbility>();
-        playerController = GetComponent<PlayerController>();
+
+        playerAnimator = GetComponentInChildren<PlayerAnimator>();
     }
 
     void Update()
@@ -28,7 +32,7 @@ public class PlayerAttack : MonoBehaviour
         if (!playerAbility.hasWeapon)
             return;
 
-        if (Input.GetMouseButtonDown(0) && attackTimer <= 0)
+        if (Input.GetMouseButtonDown(0) && attackTimer <= 0f)
         {
             Attack();
         }
@@ -38,28 +42,78 @@ public class PlayerAttack : MonoBehaviour
     {
         attackTimer = attackCooldown;
 
-        Collider[] hits = Physics.OverlapSphere(
+        // Play attack animation
+        if (playerAnimator != null)
+        {
+            playerAnimator.PlayAttack();
+        }
+
+        // Play attack sound
+        PlayAttackSFX();
+
+        // =========================
+        // Enemy
+        // =========================
+
+        Collider[] enemyHits = Physics.OverlapSphere(
             attackPoint.position,
             attackRadius,
-            attackLayer);
+            enemyLayer
+        );
 
-        foreach (Collider hit in hits)
+        foreach (Collider hit in enemyHits)
         {
-            // Enemy
-            EnemyHealth enemyHealth = hit.GetComponent<EnemyHealth>();
+            EnemyHealth enemyHealth =
+                hit.GetComponentInParent<EnemyHealth>();
 
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(1, transform.position);
+                enemyHealth.TakeDamage(
+                    1,
+                    transform.position
+                );
             }
+        }
 
+        // =========================
+        // Ground / Environment
+        // =========================
+
+        Collider[] groundHits = Physics.OverlapSphere(
+            attackPoint.position,
+            attackRadius,
+            groundLayer
+        );
+
+        foreach (Collider hit in groundHits)
+        {
             // Breakable Block
-            BreakableBlock breakableBlock = hit.GetComponent<BreakableBlock>();
+            BreakableBlock breakableBlock =
+                hit.GetComponentInParent<BreakableBlock>();
 
             if (breakableBlock != null)
             {
                 breakableBlock.TakeDamage(1);
             }
+
+            // L Shape Obstacle
+            LShapeObstacle lShapeObstacle =
+                hit.GetComponentInParent<LShapeObstacle>();
+
+            if (lShapeObstacle != null)
+            {
+                lShapeObstacle.Hit(transform.position);
+            }
+        }
+    }
+
+    void PlayAttackSFX()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX(
+                AudioManager.Instance.attackSFX
+            );
         }
     }
 
@@ -69,6 +123,10 @@ public class PlayerAttack : MonoBehaviour
             return;
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+
+        Gizmos.DrawWireSphere(
+            attackPoint.position,
+            attackRadius
+        );
     }
 }

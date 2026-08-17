@@ -19,15 +19,22 @@ public class PlayerAnimator : MonoBehaviour
     {
         animator.SetFloat(
             "Speed",
-            Mathf.Abs(controller.GetMoveSpeed()));
+            Mathf.Abs(controller.GetMoveSpeed())
+        );
 
         animator.SetBool(
             "Grounded",
-            groundCheck.IsGrounded);
+            groundCheck.IsGrounded
+        );
     }
 
     public void PlayHit()
     {
         animator.SetTrigger("Hit");
+    }
+
+    public void PlayAttack()
+    {
+        animator.SetTrigger("Attack");
     }
 }

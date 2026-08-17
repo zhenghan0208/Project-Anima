@@ -53,6 +53,7 @@
     <Compile Include="Assets\Scripts\Lobby\LevelPortal.cs" />
     <Compile Include="Assets\Scripts\Obstacles\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\LShapeObstacle.cs" />
     <Compile Include="Assets\Scripts\AudioManager\ButtonSFX.cs" />
     <Compile Include="Assets\Scripts\Background\CloudLoop.cs" />
     <Compile Include="Assets\Scripts\AudioManager\SceneMusic.cs" />
