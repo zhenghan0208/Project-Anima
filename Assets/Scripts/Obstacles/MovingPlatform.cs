@@ -20,10 +20,7 @@ public class MovingPlatform : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector3.MoveTowards(
-            transform.position,
-            target.position,
-            speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, target.position) < 0.05f)
         {

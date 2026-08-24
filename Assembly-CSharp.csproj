@@ -58,10 +58,12 @@
     <Compile Include="Assets\Scripts\Background\CloudLoop.cs" />
     <Compile Include="Assets\Scripts\AudioManager\SceneMusic.cs" />
     <Compile Include="Assets\Scripts\Ability\AbilityPickup.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\IcePrison.cs" />
     <Compile Include="Assets\Scripts\Lobby\TopDownPlayerController.cs" />
     <Compile Include="Assets\Scripts\Lobby\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\AudioManager\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Obstacles\FallingHazard.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\PressurePlate.cs" />
     <Compile Include="Assets\Scripts\Background\ParallaxLayer.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Obstacles\FallingHazardSpawner.cs" />
@@ -75,6 +77,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\TriggeredPlatform.cs" />
     <Compile Include="Assets\Scripts\PauseMenu\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Lobby\TopDownAnimator.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
@@ -87,6 +90,7 @@
     <Compile Include="Assets\Scripts\Ability\AbilityType.cs" />
     <Compile Include="Assets\Scripts\Player\DeathZone.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAbility.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\IceBlock.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

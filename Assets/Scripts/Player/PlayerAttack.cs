@@ -55,23 +55,15 @@ public class PlayerAttack : MonoBehaviour
         // Enemy
         // =========================
 
-        Collider[] enemyHits = Physics.OverlapSphere(
-            attackPoint.position,
-            attackRadius,
-            enemyLayer
-        );
+        Collider[] enemyHits = Physics.OverlapSphere(attackPoint.position, attackRadius, enemyLayer);
 
         foreach (Collider hit in enemyHits)
         {
-            EnemyHealth enemyHealth =
-                hit.GetComponentInParent<EnemyHealth>();
+            EnemyHealth enemyHealth = hit.GetComponentInParent<EnemyHealth>();
 
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(
-                    1,
-                    transform.position
-                );
+                enemyHealth.TakeDamage(1, transform.position);
             }
         }
 
@@ -79,17 +71,13 @@ public class PlayerAttack : MonoBehaviour
         // Ground / Environment
         // =========================
 
-        Collider[] groundHits = Physics.OverlapSphere(
-            attackPoint.position,
-            attackRadius,
-            groundLayer
+        Collider[] groundHits = Physics.OverlapSphere(attackPoint.position, attackRadius, groundLayer
         );
 
         foreach (Collider hit in groundHits)
         {
             // Breakable Block
-            BreakableBlock breakableBlock =
-                hit.GetComponentInParent<BreakableBlock>();
+            BreakableBlock breakableBlock = hit.GetComponentInParent<BreakableBlock>();
 
             if (breakableBlock != null)
             {
@@ -97,12 +85,27 @@ public class PlayerAttack : MonoBehaviour
             }
 
             // L Shape Obstacle
-            LShapeObstacle lShapeObstacle =
-                hit.GetComponentInParent<LShapeObstacle>();
+            LShapeObstacle lShapeObstacle = hit.GetComponentInParent<LShapeObstacle>();
 
             if (lShapeObstacle != null)
             {
                 lShapeObstacle.Hit(transform.position);
+            }
+
+            // Ice Prison
+            IcePrison icePrison = hit.GetComponentInParent<IcePrison>();
+
+            if (icePrison != null)
+            {
+                icePrison.TakeDamage();
+            }
+
+            // Ice Block
+            IceBlock iceBlock = hit.GetComponentInParent<IceBlock>();
+
+            if (iceBlock != null)
+            {
+                iceBlock.TakeDamage();
             }
         }
     }
@@ -111,9 +114,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (AudioManager.Instance != null)
         {
-            AudioManager.Instance.PlaySFX(
-                AudioManager.Instance.attackSFX
-            );
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.attackSFX);
         }
     }
 
@@ -124,9 +125,6 @@ public class PlayerAttack : MonoBehaviour
 
         Gizmos.color = Color.red;
 
-        Gizmos.DrawWireSphere(
-            attackPoint.position,
-            attackRadius
-        );
+        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
     }
 }

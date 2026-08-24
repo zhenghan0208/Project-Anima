@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
     private GroundCheck groundCheck;
     private Vector3 velocity;
     private PlayerAbility playerAbility;
-
+    private bool isFrozen;
 
     void Awake()
     {
@@ -141,10 +141,13 @@ public class PlayerController : MonoBehaviour
 
     void HandleMovement()
     {
+        if (isDashing)
+            return;
+
         if (isCelebrating)
             return;
 
-        if (isDashing)
+        if (isFrozen)
             return;
 
         float targetSpeed = playerInput.MoveInput * moveSpeed;
@@ -199,6 +202,9 @@ public class PlayerController : MonoBehaviour
         if (isCelebrating)
             return;
 
+        if (isFrozen)
+            return;
+
         if (playerInput.JumpPressed)
         {
             if (coyoteCounter > 0f)
@@ -239,6 +245,9 @@ public class PlayerController : MonoBehaviour
 
     void ApplyGravity()
     {
+        if (isFrozen)
+            return;
+
         if (velocity.y < 0)
         {
             velocity.y += gravity * fallMultiplier * Time.fixedDeltaTime;
@@ -359,6 +368,17 @@ public class PlayerController : MonoBehaviour
                 velocity.y = jumpForce;
                 celebrationTimer = celebrationJumpInterval;
             }
+        }
+    }
+
+    public void SetFrozen(bool frozen)
+    {
+        isFrozen = frozen;
+
+        if (frozen)
+        {
+            velocity.x = 0f;
+            velocity.y = 0f;
         }
     }
 }

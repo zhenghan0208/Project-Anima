@@ -317,8 +317,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Core\Graphs\IGraphElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Core\Collections\GuidCollection.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Core\Attributes\VisualScriptingHelpURLAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Core\Decorators\ValueAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Core\Listeners\MonoBehaviour\UnityOnTriggerExitMListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Core\Decorators\ValueAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Core\Reflection\AttributeUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Core\Variables\ObjectVariables.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Core\Reflection\TypeUtility.cs" />
