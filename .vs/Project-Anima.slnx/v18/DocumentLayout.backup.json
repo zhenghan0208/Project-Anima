@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\fallingicicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\fallingicicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\fallinghazard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\fallinghazard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\fallingiciclespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\fallingiciclespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\iceprison.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\iceprison.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\iceblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\iceblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,7 +50,72 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FallingHazard.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingHazard.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\FallingHazard.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingHazard.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\FallingHazard.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wBMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T10:35:31.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T10:35:03.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FallingIcicleSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingIcicleSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\FallingIcicleSpawner.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingIcicleSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\FallingIcicleSpawner.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T10:06:27.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FallingIcicle.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingIcicle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\FallingIcicle.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingIcicle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\FallingIcicle.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAowJsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T09:55:05.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IcePrison.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\IcePrison.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\IcePrison.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\IcePrison.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\IcePrison.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T07:53:13.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "TriggeredPlatform.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\TriggeredPlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\TriggeredPlatform.cs",
@@ -38,12 +123,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Obstacles\\TriggeredPlatform.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T15:12:15.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-19T15:12:15.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAttack.cs",
@@ -55,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "PressurePlate.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\PressurePlate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\PressurePlate.cs",
@@ -63,21 +147,19 @@
               "RelativeToolTip": "Assets\\Scripts\\Obstacles\\PressurePlate.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowBAAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T15:21:01.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-18T15:21:01.797Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "IceBlock.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\IceBlock.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\IceBlock.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\IceBlock.cs",
               "RelativeToolTip": "Assets\\Scripts\\Obstacles\\IceBlock.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAwwC8AAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T15:11:07.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-18T15:11:07.377Z"
             }
           ]
         }

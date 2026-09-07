@@ -14,6 +14,9 @@ public class IcePrison : MonoBehaviour
     public GameObject hintUI;
     public TMP_Text hintText;
 
+    [Header("Ice Animation")]
+    public Animator animator;
+
     [Header("Ice")]
     public GameObject iceVisual;
 
@@ -28,6 +31,11 @@ public class IcePrison : MonoBehaviour
         if (hintUI != null)
         {
             hintUI.SetActive(false);
+        }
+
+        if (animator == null)
+        {
+            animator = GetComponentInChildren<Animator>();
         }
     }
 
@@ -60,7 +68,7 @@ public class IcePrison : MonoBehaviour
 
         UpdateHintUI();
 
-        // Stop player movement
+        // Freeze player movement
         playerController.SetFrozen(true);
     }
 
@@ -75,6 +83,23 @@ public class IcePrison : MonoBehaviour
         currentHits++;
 
         UpdateHintUI();
+
+        // Play different animation for each hit
+        if (animator != null)
+        {
+            if (currentHits == 1)
+            {
+                animator.Play("ice break 1");
+            }
+            else if (currentHits == 2)
+            {
+                animator.Play("ice break 2");
+            }
+            else if (currentHits >= 3)
+            {
+                animator.Play("ice break 3");
+            }
+        }
 
         if (currentHits >= requiredHits)
         {
@@ -101,11 +126,13 @@ public class IcePrison : MonoBehaviour
         isBroken = true;
         playerTrapped = false;
 
+        // Hide hint UI
         if (hintUI != null)
         {
             hintUI.SetActive(false);
         }
 
+        // Allow player to move again
         if (playerController != null)
         {
             playerController.SetFrozen(false);
@@ -113,14 +140,44 @@ public class IcePrison : MonoBehaviour
 
         PlayBreakSFX();
 
-        if (iceVisual != null)
+        // Automatically destroy after the final animation
+        float animationLength = GetAnimationLength("ice break 3");
+
+        if (animationLength > 0f)
         {
-            Destroy(iceVisual);
+            Destroy(gameObject, animationLength);
         }
         else
         {
+            // Fallback if animation cannot be found
             Destroy(gameObject);
         }
+    }
+
+    float GetAnimationLength(string stateName)
+    {
+        if (animator == null)
+            return 0f;
+
+        RuntimeAnimatorController controller =
+            animator.runtimeAnimatorController;
+
+        if (controller == null)
+            return 0f;
+
+        foreach (AnimationClip clip in controller.animationClips)
+        {
+            if (clip.name == stateName)
+            {
+                return clip.length;
+            }
+        }
+
+        Debug.LogWarning(
+            "Animation clip not found: " + stateName
+        );
+
+        return 0f;
     }
 
     void PlayBreakSFX()
