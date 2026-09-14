@@ -160,7 +160,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  breakSFX: {fileID: 0}
+  breakSFX: {fileID: 8300000, guid: 2a52121bf3d6a8c48a67b817d1197691, type: 3}
 --- !u!1 &5205791245145188977
 GameObject:
   m_ObjectHideFlags: 0

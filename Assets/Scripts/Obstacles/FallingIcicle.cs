@@ -150,7 +150,10 @@ public class FallingIcicle : MonoBehaviour
         if (AudioManager.Instance != null &&
             breakSFX != null)
         {
-            AudioManager.Instance.PlaySFX(breakSFX);
+            AudioManager.Instance.PlayEnvironmentSFX(
+                breakSFX,
+                transform.position
+            );
         }
     }
 }

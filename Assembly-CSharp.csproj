@@ -53,6 +53,7 @@
     <Compile Include="Assets\Scripts\Obstacles\FallingIcicleSpawner.cs" />
     <Compile Include="Assets\Scripts\Lobby\LevelPortal.cs" />
     <Compile Include="Assets\Scripts\Obstacles\MovingPlatform.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\PressurePlateCameraFocus.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Obstacles\LShapeObstacle.cs" />
     <Compile Include="Assets\Scripts\AudioManager\ButtonSFX.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Assets\Scripts\AudioManager\SceneMusic.cs" />
     <Compile Include="Assets\Scripts\Ability\AbilityPickup.cs" />
     <Compile Include="Assets\Scripts\Obstacles\IcePrison.cs" />
+    <Compile Include="Assets\Scripts\Obstacles\IcicleIdleMotion.cs" />
     <Compile Include="Assets\Scripts\Lobby\TopDownPlayerController.cs" />
     <Compile Include="Assets\Scripts\Lobby\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\AudioManager\AudioManager.cs" />

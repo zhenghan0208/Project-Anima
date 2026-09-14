@@ -9,6 +9,9 @@ public class TriggeredPlatform : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 3f;
 
+    [Header("Audio")]
+    public AudioClip moveSFX;
+
     private Vector3 startPosition;
     private Coroutine moveCoroutine;
 
@@ -19,10 +22,15 @@ public class TriggeredPlatform : MonoBehaviour
 
     public void Activate()
     {
+        if (targetPosition == null)
+            return;
+
         if (moveCoroutine != null)
         {
             StopCoroutine(moveCoroutine);
         }
+
+        PlayMoveSFX();
 
         moveCoroutine = StartCoroutine(
             MoveToPosition(targetPosition.position)
@@ -35,6 +43,8 @@ public class TriggeredPlatform : MonoBehaviour
         {
             StopCoroutine(moveCoroutine);
         }
+
+        PlayMoveSFX();
 
         moveCoroutine = StartCoroutine(
             MoveToPosition(startPosition)
@@ -57,5 +67,17 @@ public class TriggeredPlatform : MonoBehaviour
         transform.position = target;
 
         moveCoroutine = null;
+    }
+
+    void PlayMoveSFX()
+    {
+        if (AudioManager.Instance != null &&
+            moveSFX != null)
+        {
+            AudioManager.Instance.PlayEnvironmentSFX(
+                moveSFX,
+                transform.position
+            );
+        }
     }
 }

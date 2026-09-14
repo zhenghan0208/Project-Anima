@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -43,11 +42,30 @@ public class IceBlock : MonoBehaviour
 
         isMelting = true;
 
-        if (iceBlockPrefab != null && respawnPoint != null)
+        // Tell any pressure plate that is holding this ice block
+        PressurePlate[] pressurePlates =
+            FindObjectsByType<PressurePlate>(
+                FindObjectsInactive.Include,
+                FindObjectsSortMode.None
+            );
+
+        foreach (PressurePlate plate in pressurePlates)
         {
-            Instantiate(iceBlockPrefab, respawnPoint.position, respawnPoint.rotation);
+            plate.RemoveIceBlock(this);
         }
 
+        // Respawn a new ice block at the original position
+        if (iceBlockPrefab != null &&
+            respawnPoint != null)
+        {
+            Instantiate(
+                iceBlockPrefab,
+                respawnPoint.position,
+                respawnPoint.rotation
+            );
+        }
+
+        // Remove current ice block
         Destroy(gameObject);
     }
 }

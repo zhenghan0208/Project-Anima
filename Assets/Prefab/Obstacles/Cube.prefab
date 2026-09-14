@@ -155,8 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IceBlock
   rb: {fileID: 1264136438614018293}
-  iceBlockPrefab: {fileID: 218565191161388592, guid: 983b8ca214728a4428a9e71ac887bb78, type: 3}
-  respawnPoint: {fileID: 0}
+  iceBlockPrefab: {fileID: 218565191161388592}
+  respawnPoint: {fileID: 4656704058103402845, guid: bd916dd3b0aef8943a94792551fe57f2, type: 3}
 --- !u!1 &4392259230091552609
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3056464599598306990}
   - component: {fileID: 5309484440628378808}
+  - component: {fileID: 1195160870315650285}
   m_Layer: 3
   m_Name: Visual
   m_TagString: Untagged
@@ -248,3 +249,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1195160870315650285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392259230091552609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff0d3ebf22e37d4eb15a05b5df8e89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IcicleIdleMotion
+  swayAngle: 2
+  swaySpeed: 2
+  minPause: 0.4
+  maxPause: 0.6
