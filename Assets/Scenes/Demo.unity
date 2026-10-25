@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   attackPoint: {fileID: 35600448}
-  attackRadius: 1
+  attackRadius: 0.5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
