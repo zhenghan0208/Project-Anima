@@ -1,11 +1,25 @@
+
 using System.Collections;
 using UnityEngine;
 
 public class LShapeObstacle : MonoBehaviour
 {
-    [Header("Child Colliders")]
-    public BoxCollider colliderA;
-    public BoxCollider colliderB;
+    [System.Serializable]
+    public class TriggerSide
+    {
+        [Tooltip("This side's attack trigger")]
+        public Collider trigger;
+
+        [Tooltip("Rotation direction when this trigger is hit: -1 or 1")]
+        public int rotationDirection = 1;
+    }
+
+    [Header("Attack Triggers")]
+    public TriggerSide[] triggerSides;
+
+    [Header("Physical Colliders")]
+    [Tooltip("Actual solid colliders of the pillars, NOT the trigger colliders")]
+    public BoxCollider[] solidColliders;
 
     [Header("Rotation")]
     public float rotationDuration = 0.2f;
@@ -14,195 +28,108 @@ public class LShapeObstacle : MonoBehaviour
     public LayerMask blockingLayers;
     public float collisionPadding = 0.02f;
 
+    [Range(2f, 15f)]
+    public float checkAngleStep = 5f;
+
     private bool isRotating;
 
-    private bool isVertical = true;
-
-    private void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        DetectInitialOrientation();
+        // Trigger colliders are handled individually below.
     }
 
-    void DetectInitialOrientation()
+    // Call this from PlayerAttack when an attack hits a trigger.
+    public void Hit(Collider hitTrigger)
     {
-        float z = transform.eulerAngles.z;
+        if (isRotating || hitTrigger == null) return;
 
-        z = Mathf.Repeat(z, 180f);
-
-        if (Mathf.Abs(z) < 45f)
+        foreach (TriggerSide side in triggerSides)
         {
-            isVertical = true;
-        }
-        else
-        {
-            isVertical = false;
-        }
-    }
+            if (side == null || side.trigger == null) continue;
 
-    /// <summary>
-    /// Called by PlayerAttack.
-    /// playerPosition = position of the attacking player.
-    /// </summary>
-    public void Hit(Vector3 playerPosition)
-    {
-        if (isRotating)
+            if (side.trigger != hitTrigger) continue;
+
+            float angle = side.rotationDirection >= 0 ? 90f : -90f;
+
+            if (CanRotate(angle))
+            {
+                StartCoroutine(RotateRoutine(angle));
+            }
+
             return;
-
-        float rotationAmount =
-            CalculateRotationDirection(playerPosition);
-
-        if (!CanRotate(rotationAmount))
-            return;
-
-        StartCoroutine(
-            RotateRoutine(rotationAmount)
-        );
-    }
-
-    float CalculateRotationDirection(
-        Vector3 playerPosition)
-    {
-        /*
-         * Convert player position into
-         * L Shape local space.
-         */
-
-        Vector3 localPlayerPosition =
-            transform.InverseTransformPoint(
-                playerPosition
-            );
-
-        /*
-         * Player is on the LEFT side.
-         *
-         * L rotates CLOCKWISE.
-         */
-
-        if (localPlayerPosition.x < 0f)
-        {
-            return -90f;
         }
-
-        /*
-         * Player is on the RIGHT side.
-         *
-         * L rotates COUNTER-CLOCKWISE.
-         */
-
-        return 90f;
     }
 
-    bool CanRotate(float angle)
+    private bool CanRotate(float angle)
     {
+        Quaternion startRotation = transform.rotation;
         Quaternion targetRotation =
-            transform.rotation *
-            Quaternion.Euler(
-                0f,
-                0f,
-                angle
-            );
+            startRotation * Quaternion.Euler(0f, 0f, angle);
 
-        bool oldA =
-            colliderA != null &&
-            colliderA.enabled;
+        int steps = Mathf.CeilToInt(90f / checkAngleStep);
 
-        bool oldB =
-            colliderB != null &&
-            colliderB.enabled;
-
-        if (colliderA != null)
-            colliderA.enabled = false;
-
-        if (colliderB != null)
-            colliderB.enabled = false;
-
-        bool blocked = false;
-
-        if (colliderA != null)
+        for (int i = 1; i <= steps; i++)
         {
-            if (CheckCollider(
-                colliderA,
-                targetRotation))
+            float t = (float)i / steps;
+            Quaternion testRotation =
+                Quaternion.Slerp(startRotation, targetRotation, t);
+
+            foreach (BoxCollider box in solidColliders)
             {
-                blocked = true;
+                if (box == null || !box.enabled) continue;
+
+                if (IsBlocked(box, startRotation, testRotation))
+                    return false;
             }
         }
 
-        if (!blocked &&
-            colliderB != null)
-        {
-            if (CheckCollider(
-                colliderB,
-                targetRotation))
-            {
-                blocked = true;
-            }
-        }
-
-        if (colliderA != null)
-            colliderA.enabled = oldA;
-
-        if (colliderB != null)
-            colliderB.enabled = oldB;
-
-        return !blocked;
+        return true;
     }
 
-    bool CheckCollider(
-        BoxCollider boxCollider,
-        Quaternion targetRootRotation)
+    private bool IsBlocked(
+        BoxCollider box,
+        Quaternion startRotation,
+        Quaternion testRotation)
     {
-        Vector3 localCenter =
-            boxCollider.center;
+        Vector3 currentCenter = box.transform.TransformPoint(box.center);
 
-        Vector3 childLocalPosition =
-            boxCollider.transform.localPosition;
-
-        Vector3 offset =
-            childLocalPosition +
-            localCenter;
-
-        Vector3 rotatedOffset =
-            targetRootRotation *
-            Quaternion.Inverse(
-                transform.rotation
-            ) *
-            offset;
+        Quaternion rotationDelta =
+            testRotation * Quaternion.Inverse(startRotation);
 
         Vector3 futureCenter =
             transform.position +
-            rotatedOffset;
+            rotationDelta * (currentCenter - transform.position);
 
-        Vector3 size =
-            Vector3.Scale(
-                boxCollider.size,
-                boxCollider.transform.lossyScale
-            );
+        Vector3 scale = box.transform.lossyScale;
+        Vector3 halfExtents = Vector3.Scale(
+            box.size * 0.5f,
+            new Vector3(
+                Mathf.Abs(scale.x),
+                Mathf.Abs(scale.y),
+                Mathf.Abs(scale.z)
+            )
+        );
+
+        halfExtents += Vector3.one * collisionPadding;
 
         Quaternion futureRotation =
-            targetRootRotation *
-            boxCollider.transform.localRotation;
+            rotationDelta * box.transform.rotation;
 
-        Collider[] hits =
-            Physics.OverlapBox(
-                futureCenter,
-                size * 0.5f +
-                Vector3.one *
-                collisionPadding,
-                futureRotation,
-                blockingLayers,
-                QueryTriggerInteraction.Ignore
-            );
+        Collider[] hits = Physics.OverlapBox(
+            futureCenter,
+            halfExtents,
+            futureRotation,
+            blockingLayers,
+            QueryTriggerInteraction.Ignore
+        );
 
         foreach (Collider hit in hits)
         {
-            if (hit == null)
-                continue;
+            if (hit == null) continue;
 
-            if (hit.transform == transform)
-                continue;
-
-            if (hit.transform.IsChildOf(transform))
+            // Ignore this obstacle's own colliders.
+            if (hit.transform == transform ||
+                hit.transform.IsChildOf(transform))
                 continue;
 
             return true;
@@ -211,20 +138,13 @@ public class LShapeObstacle : MonoBehaviour
         return false;
     }
 
-    IEnumerator RotateRoutine(float angle)
+    private IEnumerator RotateRoutine(float angle)
     {
         isRotating = true;
 
-        Quaternion startRotation =
-            transform.rotation;
-
+        Quaternion startRotation = transform.rotation;
         Quaternion targetRotation =
-            startRotation *
-            Quaternion.Euler(
-                0f,
-                0f,
-                angle
-            );
+            startRotation * Quaternion.Euler(0f, 0f, angle);
 
         float timer = 0f;
 
@@ -232,136 +152,16 @@ public class LShapeObstacle : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            float t =
-                Mathf.Clamp01(
-                    timer / rotationDuration
-                );
-
-            t = Mathf.SmoothStep(
-                0f,
-                1f,
-                t
-            );
+            float t = Mathf.Clamp01(timer / rotationDuration);
+            t = Mathf.SmoothStep(0f, 1f, t);
 
             transform.rotation =
-                Quaternion.Slerp(
-                    startRotation,
-                    targetRotation,
-                    t
-                );
+                Quaternion.Slerp(startRotation, targetRotation, t);
 
             yield return null;
         }
 
-        transform.rotation =
-            targetRotation;
-
-        isVertical = !isVertical;
-
+        transform.rotation = targetRotation;
         isRotating = false;
-    }
-
-    // =========================================================
-    // GIZMOS
-    // =========================================================
-
-    private void OnDrawGizmosSelected()
-    {
-        if (colliderA == null &&
-            colliderB == null)
-            return;
-
-        /*
-         * Gizmo shows the next possible
-         * rotation from the default LEFT-side
-         * attack direction.
-         */
-
-        float previewAngle = -90f;
-
-        Quaternion targetRotation =
-            transform.rotation *
-            Quaternion.Euler(
-                0f,
-                0f,
-                previewAngle
-            );
-
-        if (colliderA != null)
-        {
-            DrawFutureCollider(
-                colliderA,
-                targetRotation
-            );
-        }
-
-        if (colliderB != null)
-        {
-            DrawFutureCollider(
-                colliderB,
-                targetRotation
-            );
-        }
-    }
-
-    void DrawFutureCollider(
-        BoxCollider boxCollider,
-        Quaternion targetRootRotation)
-    {
-        Vector3 localCenter =
-            boxCollider.center;
-
-        Vector3 childLocalPosition =
-            boxCollider.transform.localPosition;
-
-        Vector3 offset =
-            childLocalPosition +
-            localCenter;
-
-        Vector3 rotatedOffset =
-            targetRootRotation *
-            Quaternion.Inverse(
-                transform.rotation
-            ) *
-            offset;
-
-        Vector3 futureCenter =
-            transform.position +
-            rotatedOffset;
-
-        Vector3 size =
-            Vector3.Scale(
-                boxCollider.size,
-                boxCollider.transform.lossyScale
-            );
-
-        size +=
-            Vector3.one *
-            collisionPadding *
-            2f;
-
-        Quaternion futureRotation =
-            targetRootRotation *
-            boxCollider.transform.localRotation;
-
-        Gizmos.color = Color.yellow;
-
-        Matrix4x4 oldMatrix =
-            Gizmos.matrix;
-
-        Gizmos.matrix =
-            Matrix4x4.TRS(
-                futureCenter,
-                futureRotation,
-                Vector3.one
-            );
-
-        Gizmos.DrawWireCube(
-            Vector3.zero,
-            size
-        );
-
-        Gizmos.matrix =
-            oldMatrix;
     }
 }
