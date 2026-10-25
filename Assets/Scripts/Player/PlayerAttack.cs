@@ -133,15 +133,19 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+
     void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
             return;
 
+        // Attack range
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(
-            attackPoint.position,
-            attackRadius
-        );
+        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+
+        // Show attack point
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(attackPoint.position, 0.05f);
     }
+
 }

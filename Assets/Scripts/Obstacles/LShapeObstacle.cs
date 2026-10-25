@@ -41,23 +41,73 @@ public class LShapeObstacle : MonoBehaviour
     // Call this from PlayerAttack when an attack hits a trigger.
     public void Hit(Collider hitTrigger)
     {
-        if (isRotating || hitTrigger == null) return;
+        if (hitTrigger == null)
+        {
+            Debug.LogWarning(
+                $"[LShapeObstacle: {name}] Hit received a NULL collider!",
+                this
+            );
+            return;
+        }
+
+        Debug.Log(
+            $"[LShapeObstacle: {name}] Attack detected! " +
+            $"Hit Collider: {hitTrigger.name}",
+            this
+        );
+
+        if (isRotating)
+        {
+            Debug.Log(
+                $"[LShapeObstacle: {name}] Rotation ignored: already rotating.",
+                this
+            );
+            return;
+        }
 
         foreach (TriggerSide side in triggerSides)
         {
-            if (side == null || side.trigger == null) continue;
+            if (side == null || side.trigger == null)
+                continue;
 
-            if (side.trigger != hitTrigger) continue;
+            if (side.trigger != hitTrigger)
+                continue;
 
             float angle = side.rotationDirection >= 0 ? 90f : -90f;
 
+            Debug.Log(
+                $"[LShapeObstacle: {name}] Matched Trigger: {hitTrigger.name}. " +
+                $"Requested rotation: {angle} degrees.",
+                this
+            );
+
             if (CanRotate(angle))
             {
+                Debug.Log(
+                    $"[LShapeObstacle: {name}] Rotation allowed. Starting rotation.",
+                    this
+                );
+
                 StartCoroutine(RotateRoutine(angle));
+            }
+            else
+            {
+                Debug.LogWarning(
+                    $"[LShapeObstacle: {name}] Rotation BLOCKED! " +
+                    "A solid collider would hit an obstacle.",
+                    this
+                );
             }
 
             return;
         }
+
+        Debug.LogWarning(
+            $"[LShapeObstacle: {name}] Attack detected, but Collider " +
+            $"'{hitTrigger.name}' was NOT found in triggerSides. " +
+            "Check the Inspector assignments.",
+            this
+        );
     }
 
     private bool CanRotate(float angle)
@@ -71,25 +121,34 @@ public class LShapeObstacle : MonoBehaviour
         for (int i = 1; i <= steps; i++)
         {
             float t = (float)i / steps;
+
             Quaternion testRotation =
                 Quaternion.Slerp(startRotation, targetRotation, t);
 
             foreach (BoxCollider box in solidColliders)
             {
-                if (box == null || !box.enabled) continue;
+                if (box == null || !box.enabled)
+                    continue;
 
-                if (IsBlocked(box, startRotation, testRotation))
+                if (IsBlocked(box, startRotation, testRotation, angle, i))
                     return false;
             }
         }
+
+        Debug.Log(
+            $"[LShapeObstacle: {name}] Rotation path is clear.",
+            this
+        );
 
         return true;
     }
 
     private bool IsBlocked(
-        BoxCollider box,
-        Quaternion startRotation,
-        Quaternion testRotation)
+    BoxCollider box,
+    Quaternion startRotation,
+    Quaternion testRotation,
+    float targetAngle,
+    int step)
     {
         Vector3 currentCenter = box.transform.TransformPoint(box.center);
 
@@ -101,6 +160,7 @@ public class LShapeObstacle : MonoBehaviour
             rotationDelta * (currentCenter - transform.position);
 
         Vector3 scale = box.transform.lossyScale;
+
         Vector3 halfExtents = Vector3.Scale(
             box.size * 0.5f,
             new Vector3(
@@ -125,12 +185,20 @@ public class LShapeObstacle : MonoBehaviour
 
         foreach (Collider hit in hits)
         {
-            if (hit == null) continue;
+            if (hit == null)
+                continue;
 
-            // Ignore this obstacle's own colliders.
             if (hit.transform == transform ||
                 hit.transform.IsChildOf(transform))
                 continue;
+
+            Debug.LogWarning(
+                $"[LShapeObstacle: {name}] BLOCKED! " +
+                $"Solid Collider: '{box.name}' would hit '{hit.name}'. " +
+                $"Target rotation: {targetAngle} degrees, " +
+                $"Check step: {step}/{Mathf.CeilToInt(90f / checkAngleStep)}.",
+                this
+            );
 
             return true;
         }
