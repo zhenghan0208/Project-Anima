@@ -23,106 +23,238 @@ public class PlayerController : MonoBehaviour
 
     [Header("Jump Assist")]
     public float coyoteTime = 0.12f;
+    private float coyoteCounter;
+
+    [Header("Double Jump")]
+    private bool canDoubleJump;
+
+    [Header("Facing")]
+    public bool facingRight = true;
+
+    [Header("Ceiling Check")]
+    public Transform ceilingCheck;
+    public float ceilingRadius = 0.2f;
+    public LayerMask groundLayer;
+
+    [Header("Knockback")]
+    public float knockbackForce = 10f;
+    public float knockbackUpForce = 10f;
+    public float knockbackRecoverSpeed = 25f;
+    private bool isKnockback;
+    private float knockbackTimer;
+
+    [Header("Dash")]
+    public float dashSpeed = 20f;
+    public float dashDuration = 0.15f;
+    public float dashCooldown = 0.5f;
+    private bool isDashing;
+    private float dashTimer;
+    private float dashCooldownTimer;
+
+    [Header("Stage Clear")]
+    public bool isCelebrating;
+    public float celebrationJumpInterval = 0.4f;
+    private float celebrationTimer;
 
     private Rigidbody rb;
     private PlayerInput playerInput;
     private GroundCheck groundCheck;
-
     private Vector3 velocity;
-
-    private float coyoteCounter;
+    private PlayerAbility playerAbility;
+    private bool isFrozen;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
         playerInput = GetComponent<PlayerInput>();
         groundCheck = GetComponent<GroundCheck>();
+        playerAbility = GetComponent<PlayerAbility>();
 
         rb.useGravity = false;
         rb.interpolation = RigidbodyInterpolation.Interpolate;
 
-        rb.constraints = RigidbodyConstraints.FreezePositionZ |
-                         RigidbodyConstraints.FreezeRotation;
+        rb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
     }
 
     void Update()
     {
+        if (isCelebrating)
+        {
+            HandleCelebration();
+            return;
+        }
+
         groundCheck.CheckGround();
 
         UpdateCoyoteTime();
 
         HandleJump();
+
+        HandleFacing();
+
+        HandleDash();
     }
 
     void FixedUpdate()
     {
-        HandleMovement();
+        if (isDashing)
+        {
+            Dash();
 
-        ApplyGravity();
+            return;
+        }
 
-        velocity.y = Mathf.Max(
-            velocity.y,
-            maxFallSpeed);
+        if (isKnockback)
+        {
+            knockbackTimer -= Time.fixedDeltaTime;
 
-        rb.linearVelocity = velocity;
+            velocity.x = Mathf.MoveTowards(velocity.x, 0, knockbackRecoverSpeed * Time.fixedDeltaTime);
+
+            if (knockbackTimer <= 0)
+            {
+                isKnockback = false;
+            }
+        }
+        else
+        {
+            HandleMovement();
+        }
+
+        CheckCeiling();
+
+        if (!isDashing)
+        {
+            ApplyGravity();
+        }
+
+        velocity.y = Mathf.Max(velocity.y, maxFallSpeed);
+
+        Vector3 finalVelocity = velocity;
+
+        if (groundCheck.CurrentPlatform != null)
+        {
+            finalVelocity += groundCheck.CurrentPlatform.PlatformVelocity;
+        }
+
+        rb.linearVelocity = finalVelocity;
     }
 
     void HandleMovement()
     {
+        if (isDashing)
+            return;
+
+        if (isCelebrating)
+            return;
+
+        if (isFrozen)
+            return;
+
         float targetSpeed = playerInput.MoveInput * moveSpeed;
 
         float acceleration;
 
         if (groundCheck.IsGrounded)
         {
-            acceleration = Mathf.Abs(targetSpeed) > 0.01f ?
-                groundAcceleration :
-                groundDeceleration;
+            acceleration = Mathf.Abs(targetSpeed) > 0.01f ? groundAcceleration : groundDeceleration;
         }
         else
         {
-            acceleration = Mathf.Abs(targetSpeed) > 0.01f ?
-                airAcceleration :
-                airDeceleration;
+            acceleration = Mathf.Abs(targetSpeed) > 0.01f ? airAcceleration : airDeceleration;
         }
 
-        velocity.x = Mathf.MoveTowards(
-            velocity.x,
-            targetSpeed,
-            acceleration * Time.fixedDeltaTime);
+        velocity.x = Mathf.MoveTowards(velocity.x, targetSpeed, acceleration * Time.fixedDeltaTime);
+    }
+
+    public void ApplyKnockback(Vector3 hitPoint, float duration = 0.2f)
+    {
+        Vector3 direction = (transform.position - hitPoint).normalized;
+
+        direction.y = 0;
+
+        velocity.x = direction.x * knockbackForce;
+        velocity.y = knockbackUpForce;
+
+        isKnockback = true;
+        knockbackTimer = duration;
+    }
+
+    void HandleFacing()
+    {
+        if (playerInput.MoveInput > 0.01f)
+        {
+            facingRight = true;
+        }
+        else if (playerInput.MoveInput < -0.01f)
+        {
+            facingRight = false;
+        }
+
+        Vector3 scale = transform.localScale;
+
+        scale.x = Mathf.Abs(scale.x) * (facingRight ? 1 : -1);
+
+        transform.localScale = scale;
     }
 
     void HandleJump()
     {
-        if (playerInput.JumpPressed && coyoteCounter > 0f)
+        if (isCelebrating)
+            return;
+
+        if (isFrozen)
+            return;
+
+        if (playerInput.JumpPressed)
         {
-            velocity.y = jumpForce;
+            if (coyoteCounter > 0f)
+            {
+                velocity.y = jumpForce;
 
-            coyoteCounter = 0f;
+                coyoteCounter = 0f;
 
-            playerInput.ResetJump();
+                playerInput.ResetJump();
+
+                PlayJumpSFX();
+            }
+            else if (playerAbility.hasDoubleJump && canDoubleJump)
+            {
+                velocity.y = jumpForce;
+
+                canDoubleJump = false;
+
+                playerInput.ResetJump();
+
+                PlayJumpSFX();
+            }
         }
 
         if (!playerInput.JumpHeld && velocity.y > 0)
         {
-            velocity.y += gravity *
-                (lowJumpMultiplier - 1) *
-                Time.deltaTime;
+            velocity.y += gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
+    void PlayJumpSFX()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.jumpSFX);
         }
     }
 
     void ApplyGravity()
     {
+        if (isFrozen)
+            return;
+
         if (velocity.y < 0)
         {
-            velocity.y += gravity *
-                fallMultiplier *
-                Time.fixedDeltaTime;
+            velocity.y += gravity * fallMultiplier * Time.fixedDeltaTime;
         }
         else
         {
-            velocity.y += gravity *
-                Time.fixedDeltaTime;
+            velocity.y += gravity * Time.fixedDeltaTime;
         }
     }
 
@@ -131,6 +263,8 @@ public class PlayerController : MonoBehaviour
         if (groundCheck.IsGrounded)
         {
             coyoteCounter = coyoteTime;
+
+            canDoubleJump = true;
         }
         else
         {
@@ -138,12 +272,113 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void CheckCeiling()
+    {
+        bool hitCeiling = Physics.CheckSphere(ceilingCheck.position, ceilingRadius, groundLayer);
+
+        if (hitCeiling && velocity.y > 0)
+        {
+            velocity.y = 0;
+        }
+    }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
 
-        Gizmos.DrawLine(
-            transform.position,
-            transform.position + velocity);
+        Gizmos.DrawLine(transform.position, transform.position + velocity);
+
+        if (ceilingCheck != null)
+        {
+            Gizmos.color = Color.cyan;
+
+            Gizmos.DrawWireSphere(ceilingCheck.position, ceilingRadius);
+        }
+    }
+
+    void HandleDash()
+    {
+        if (isCelebrating)
+            return;
+
+        if (dashCooldownTimer > 0)
+        {
+            dashCooldownTimer -= Time.deltaTime;
+        }
+
+        if (!playerAbility.hasDash)
+            return;
+
+        if (!playerInput.DashPressed)
+            return;
+
+        if (isDashing)
+            return;
+
+        if (dashCooldownTimer > 0)
+            return;
+
+        isDashing = true;
+
+        dashTimer = dashDuration;
+
+        dashCooldownTimer = dashCooldown;
+
+        playerInput.ResetDash();
+    }
+
+    void Dash()
+    {
+        dashTimer -= Time.fixedDeltaTime;
+
+        float direction = facingRight ? 1f : -1f;
+
+        velocity.x = direction * dashSpeed;
+        velocity.y = 0;
+
+        if (dashTimer <= 0)
+        {
+            isDashing = false;
+        }
+    }
+
+    public float GetMoveSpeed()
+    {
+        return velocity.x;
+    }
+
+    public void StartCelebration()
+    {
+        isCelebrating = true;
+        celebrationTimer = 0f;
+    }
+
+    void HandleCelebration()
+    {
+        groundCheck.CheckGround();
+
+        velocity.x = 0f;
+
+        if (groundCheck.IsGrounded && velocity.y <= 0f)
+        {
+            celebrationTimer -= Time.deltaTime;
+
+            if (celebrationTimer <= 0f)
+            {
+                velocity.y = jumpForce;
+                celebrationTimer = celebrationJumpInterval;
+            }
+        }
+    }
+
+    public void SetFrozen(bool frozen)
+    {
+        isFrozen = frozen;
+
+        if (frozen)
+        {
+            velocity.x = 0f;
+            velocity.y = 0f;
+        }
     }
 }

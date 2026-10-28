@@ -1,14 +1,27 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class DeathZone : MonoBehaviour
 {
+    [Header("Death Height")]
+    public float deathHeight = -5f;
+
+    private PlayerHealth playerHealth;
+    private bool hasTriggered;
+
+    void Start()
+    {
+        playerHealth = GetComponent<PlayerHealth>();
+    }
+
     void Update()
     {
-        if (transform.position.y < -1)
+        if (hasTriggered)
+            return;
+
+        if (transform.position.y < deathHeight)
         {
-            SceneManager.LoadScene(
-                SceneManager.GetActiveScene().buildIndex);
+            hasTriggered = true;
+            playerHealth.Kill();
         }
     }
 }
