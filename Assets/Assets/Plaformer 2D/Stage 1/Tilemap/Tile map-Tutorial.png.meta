@@ -1,0 +1,1732 @@
+fileFormatVersion: 2
+guid: b982833a949cd0544a300da7fd60e154
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tile map-Tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 947
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bcb37162ceb3943aafa4066a6e8176
+      internalID: 2058395630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 954
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca51e1047cdf0f44c87632bac1658577
+      internalID: 1428260875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 946
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52fa363a891055458f284818919b422
+      internalID: 1939898008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_3
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 946
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de3ab9d784d7d244a0adb363f439bc8
+      internalID: -2061417279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 953
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddcdff953a3ce643a7468edb6498f27
+      internalID: 1748488497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 930
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae176c0e9c240424da00f9e40a616264
+      internalID: -1135502150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_6
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 930
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cca46cd578ee54699e282ed73947f6
+      internalID: -1800856550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_7
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 946
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d75c9a7417b5344e998f84eff93fabf
+      internalID: 905523529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_8
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 930
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78423e74c34553a459ff0c4aa60668fc
+      internalID: -1554813380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_9
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 930
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1ce1447af057f4d8ad5da671b98eab
+      internalID: -1606195686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_10
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 945
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a06cf7ebe7452e4caa4d218235d4885
+      internalID: -736090780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_11
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 945
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6631791768e78f142b8bf0d491077e5f
+      internalID: 358078699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_12
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 953
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab58f81acef13924e81bdc9b9e09cbc4
+      internalID: -437574655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 852
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b3edb7a62c5c942834fee9e0259443
+      internalID: -107893837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_14
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 860
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b212aabac6acb594ab3862da5b1e28eb
+      internalID: 1253413644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_15
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 852
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53721c793352ebf478f81b34ab927e83
+      internalID: 1173769923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_16
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 852
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04f33f60c65282429715beb4572b359
+      internalID: -1619592664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_17
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 860
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55c567823eb2024a8d59635044c1c99
+      internalID: -1816411269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_18
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 837
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3bcbabf74c02940a660a8e128a99a5
+      internalID: -1681146522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_19
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 837
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6da8ac0f3bd0f940acf43d8ec1863a5
+      internalID: -1731160942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_20
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 852
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c672f9f5eef06e94da1041e9b775c99f
+      internalID: -1572568608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_21
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 836
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69efac5f3aa714d439563e81b9806f79
+      internalID: 56312345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_22
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 836
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2cb1d163d467c4893a48c2e817924e
+      internalID: 1085773047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_23
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 852
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57bd7140bff0e7b42aa7c36f91eeb7e9
+      internalID: 691492153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_24
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 852
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c024697fb613644c92a3faf75006c20
+      internalID: -377868477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_25
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 859
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c215c18caf496b248893dd8f90213b1b
+      internalID: -1895081273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_26
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 758
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a8bd6329753284785f7242ba412fb3
+      internalID: 1146157097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_27
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 766
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7a36ba783e58749b8035bbb1bcb626
+      internalID: 1666898052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 759
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898fcebafa7a9fb4390cb2f19e982365
+      internalID: 304556081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_29
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 758
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602808f67c3db8b41b517d38153a1051
+      internalID: -1942704219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_30
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 767
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73b4b07ef6e3024797b0d8100a40fa2
+      internalID: 1582593276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_31
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 742
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdb6e37d8d9a73458c374fbef99723e
+      internalID: -243889268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_32
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 743
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748b7327c67e8a44aaa2d3655a1ebb5b
+      internalID: -1710434424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_33
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 758
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9caa766af34bb34299fbc75642d8fee
+      internalID: -392893193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_34
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 743
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f10b0c7b88581a499170392b2a8141b
+      internalID: 795753711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_35
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 743
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8f57e8a85747e4cbea346ffe37eec4
+      internalID: 1212583512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_36
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 759
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7c607f26312304fba4bde474747a61
+      internalID: -1123555982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_37
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 759
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5151f46a990e0d43871e480a6815535
+      internalID: 26990217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_38
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 765
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4116638964af1054a863737eea87e8f4
+      internalID: -1589832642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_39
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 665
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b8778a6c9f5ea4fadd693990abf98f
+      internalID: 1521777472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_40
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 670
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26325112dcfbbd4abff636f42fb256b
+      internalID: -1240173422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_41
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 665
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ae196e283c4f14685b6709f0efcc09
+      internalID: -1226920190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_42
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 664
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3571ff38a241e544ea3ede082954e990
+      internalID: 1266682873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_43
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 673
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53ea46480059924fbba5194aefbcf5c
+      internalID: -1382435894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_44
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 648
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f29d8370bfc4374da5f2489fc6f7cff
+      internalID: -1857074662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_45
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 649
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e003f6f023614194285b4700122fb326
+      internalID: -919886945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_46
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 664
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cca9f269c97e494f8469ac6ac8ee388
+      internalID: 920968952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_47
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 649
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff4685b4d00b5b4caf60e2477e51ef8
+      internalID: -1042780540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_48
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 649
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434d73b44a711f24291a91c603f1fb5b
+      internalID: -1758908582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_49
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 665
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae578cf511070748a2a06a98b761dbd
+      internalID: -570055028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_50
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 665
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7d311960f55bc428e081552ed1a3d2
+      internalID: 575257696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_51
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f0bf15daa7ed84bb86bca5f81ca71c
+      internalID: 1216462727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_52
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 571
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e3b7edae0531249b489f378f369e19
+      internalID: 467109119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_53
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 579
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e827bb9295f9b44b49f1272f85107e
+      internalID: 496998240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_54
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 569
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8637708e8dc02459622a49024ab011
+      internalID: -1626314960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_55
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 568
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605605bd5b526f44689a7d0a49c128d6
+      internalID: -1739712655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_56
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 580
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7f3307b8025e8478fe7be2fbc9221f
+      internalID: -403141068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_57
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 555
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5567687096b91734283322b8ae06f670
+      internalID: -1013080328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_58
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 556
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c09cac8e195f141882bc7244ed574f
+      internalID: -167056833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_59
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 571
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085c9e8394163f84cb7b04524b9c372f
+      internalID: -21905855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_60
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 556
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daafe234316cf104986d3bb0756a25a1
+      internalID: -2083570552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_61
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 556
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cfbc5098b8c844780bdd84eb2f63ca
+      internalID: -1640308681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_62
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 572
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243fbc79802b70049ae8ddae69940071
+      internalID: -2016842063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_63
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 572
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefc3ffa23f5f0542b3bf6798c9d45ad
+      internalID: 1519630054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_64
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 578
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61911bfd931d60c458124119e0001886
+      internalID: -1904989976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 501
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c997dbc5ef8b949850aaff8e66ca6a
+      internalID: 1636495909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_66
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 500
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2741096fb248ca419710ae91e405442
+      internalID: 1750380821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_67
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 499
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53473b7e14721b4ca544737c2871be3
+      internalID: -592350500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile map-Tutorial_68
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 498
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f9f6c1a8517e645beb0e03024aaeed
+      internalID: 2127094874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f30eb46dbac4f37468ec1ed8f9a90ba5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Tile map-Tutorial_0: 2058395630
+      Tile map-Tutorial_1: 1428260875
+      Tile map-Tutorial_10: -736090780
+      Tile map-Tutorial_11: 358078699
+      Tile map-Tutorial_12: -437574655
+      Tile map-Tutorial_13: -107893837
+      Tile map-Tutorial_14: 1253413644
+      Tile map-Tutorial_15: 1173769923
+      Tile map-Tutorial_16: -1619592664
+      Tile map-Tutorial_17: -1816411269
+      Tile map-Tutorial_18: -1681146522
+      Tile map-Tutorial_19: -1731160942
+      Tile map-Tutorial_2: 1939898008
+      Tile map-Tutorial_20: -1572568608
+      Tile map-Tutorial_21: 56312345
+      Tile map-Tutorial_22: 1085773047
+      Tile map-Tutorial_23: 691492153
+      Tile map-Tutorial_24: -377868477
+      Tile map-Tutorial_25: -1895081273
+      Tile map-Tutorial_26: 1146157097
+      Tile map-Tutorial_27: 1666898052
+      Tile map-Tutorial_28: 304556081
+      Tile map-Tutorial_29: -1942704219
+      Tile map-Tutorial_3: -2061417279
+      Tile map-Tutorial_30: 1582593276
+      Tile map-Tutorial_31: -243889268
+      Tile map-Tutorial_32: -1710434424
+      Tile map-Tutorial_33: -392893193
+      Tile map-Tutorial_34: 795753711
+      Tile map-Tutorial_35: 1212583512
+      Tile map-Tutorial_36: -1123555982
+      Tile map-Tutorial_37: 26990217
+      Tile map-Tutorial_38: -1589832642
+      Tile map-Tutorial_39: 1521777472
+      Tile map-Tutorial_4: 1748488497
+      Tile map-Tutorial_40: -1240173422
+      Tile map-Tutorial_41: -1226920190
+      Tile map-Tutorial_42: 1266682873
+      Tile map-Tutorial_43: -1382435894
+      Tile map-Tutorial_44: -1857074662
+      Tile map-Tutorial_45: -919886945
+      Tile map-Tutorial_46: 920968952
+      Tile map-Tutorial_47: -1042780540
+      Tile map-Tutorial_48: -1758908582
+      Tile map-Tutorial_49: -570055028
+      Tile map-Tutorial_5: -1135502150
+      Tile map-Tutorial_50: 575257696
+      Tile map-Tutorial_51: 1216462727
+      Tile map-Tutorial_52: 467109119
+      Tile map-Tutorial_53: 496998240
+      Tile map-Tutorial_54: -1626314960
+      Tile map-Tutorial_55: -1739712655
+      Tile map-Tutorial_56: -403141068
+      Tile map-Tutorial_57: -1013080328
+      Tile map-Tutorial_58: -167056833
+      Tile map-Tutorial_59: -21905855
+      Tile map-Tutorial_6: -1800856550
+      Tile map-Tutorial_60: -2083570552
+      Tile map-Tutorial_61: -1640308681
+      Tile map-Tutorial_62: -2016842063
+      Tile map-Tutorial_63: 1519630054
+      Tile map-Tutorial_64: -1904989976
+      Tile map-Tutorial_65: 1636495909
+      Tile map-Tutorial_66: 1750380821
+      Tile map-Tutorial_67: -592350500
+      Tile map-Tutorial_68: 2127094874
+      Tile map-Tutorial_7: 905523529
+      Tile map-Tutorial_8: -1554813380
+      Tile map-Tutorial_9: -1606195686
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
