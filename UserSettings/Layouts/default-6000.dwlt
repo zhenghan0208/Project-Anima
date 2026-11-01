@@ -199,7 +199,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 59
+  controlID: 58
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -644,7 +644,7 @@ MonoBehaviour:
       y: 21
       width: 1471
       height: 736
-    m_Scale: {x: 0.6814814, y: 0.6814815}
+    m_Scale: {x: 0.6814815, y: 0.6814815}
     m_Translation: {x: 735.5, y: 368}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1302,9 +1302,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 9.238812, y: 4.373827, z: 27.362614}
+    m_Target: {x: 0.64347166, y: -12.9485035, z: 7.7735415}
     speed: 2
-    m_Value: {x: 9.238812, y: 4.373827, z: 27.362614}
+    m_Value: {x: 0.64347166, y: -12.9485035, z: 7.7735415}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1350,13 +1350,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.023209548, y: 0.63467425, z: -0.019002194, w: 0.77227557}
+    m_Target: {x: -0.17969325, y: -0.73850036, z: 0.21666625, w: -0.6128614}
     speed: 2
-    m_Value: {x: 0.023236625, y: 0.6334769, z: -0.018966215, w: 0.7731801}
+    m_Value: {x: -0.17999864, y: -0.73750067, z: 0.21637312, w: -0.6139022}
   m_Size:
-    m_Target: 19.89534
+    m_Target: 34.53009
     speed: 2
-    m_Value: 19.89534
+    m_Value: 34.53009
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1572,15 +1572,14 @@ MonoBehaviour:
     m_DynamicPanelBehavior: 0
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 288}
-      m_SelectedIDs: []
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs:
+      - m_Data: 57306
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -13368
-      - m_Data: -4064
-      - m_Data: -2268
-      - m_Data: 50338
+      - m_Data: -6570
+      - m_Data: -1320
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1655,7 +1654,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets/3D Model/Kitchen
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1665,24 +1664,24 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Assets/3D Model/Kitchen
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Kyeseng\Desktop\Utar\GitHub\Project-Anima
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 204}
     m_SelectedIDs:
-    - m_Data: 56368
+    - m_Data: 57184
     m_LastClickedID:
-      m_Data: 56368
+      m_Data: 57184
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56040
-    - m_Data: 56042
-    - m_Data: 56044
-    - m_Data: 56046
+    - m_Data: 56842
+    - m_Data: 56844
+    - m_Data: 56846
+    - m_Data: 56848
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1716,10 +1715,10 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56040
-    - m_Data: 56042
-    - m_Data: 56044
-    - m_Data: 56046
+    - m_Data: 56842
+    - m_Data: 56844
+    - m_Data: 56846
+    - m_Data: 56848
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1746,8 +1745,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: []
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs:
+    - m_Data: 57306
+    m_LastClickedInstanceID: 57306
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 67736
