@@ -98,7 +98,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 16
+  controlID: 105
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 55
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 49
+  controlID: 56
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -753,7 +753,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets/3D Model/Master
+    - Assets/Assets/3D Model/Living Room
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -763,7 +763,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Assets/3D Model/Master
+  - Assets/Assets/3D Model/Living Room
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Kyeseng\Desktop\Utar\GitHub\Project-Anima
   m_LockTracker:
@@ -772,15 +772,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 57}
     m_SelectedIDs:
-    - m_Data: 92164
+    - m_Data: 58996
     m_LastClickedID:
-      m_Data: 92164
+      m_Data: 58996
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 58376
-    - m_Data: 58378
-    - m_Data: 58380
-    - m_Data: 58382
+    - m_Data: 58696
+    - m_Data: 58698
+    - m_Data: 58700
+    - m_Data: 58702
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -813,10 +813,10 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 58376
-    - m_Data: 58378
-    - m_Data: 58380
-    - m_Data: 58382
+    - m_Data: 58696
+    - m_Data: 58698
+    - m_Data: 58700
+    - m_Data: 58702
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1517,9 +1517,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -36.628937, y: 4.9982085, z: -9.936489}
+    m_Target: {x: 62.758488, y: -46.083164, z: 3.929683}
     speed: 2
-    m_Value: {x: -36.628937, y: 4.9982085, z: -9.936489}
+    m_Value: {x: 62.758488, y: -46.083164, z: 3.929683}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1565,13 +1565,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.2519809, y: -0.065814875, z: 0.017220514, w: -0.965422}
+    m_Target: {x: 0.19230609, y: 0.70887095, z: -0.21142821, w: 0.6450205}
     speed: 2
-    m_Value: {x: -0.2519809, y: -0.06581488, z: 0.017220514, w: -0.96542203}
+    m_Value: {x: 0.19230609, y: 0.70887095, z: -0.21142821, w: 0.64502054}
   m_Size:
-    m_Target: 12.844217
+    m_Target: 70.85125
     speed: 2
-    m_Value: 12.844217
+    m_Value: 70.85125
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1650,14 +1650,9 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -56884
-      - m_Data: -50094
-      - m_Data: -48872
-      - m_Data: -46354
-      - m_Data: -38522
-      - m_Data: -38020
-      - m_Data: -37650
-      - m_Data: -35784
+      - m_Data: -4912
+      - m_Data: -1620
+      - m_Data: 49560
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
