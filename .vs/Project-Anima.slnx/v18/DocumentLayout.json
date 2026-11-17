@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\lobby\\arrowspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lobby\\arrowspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\lobby\\fallingarrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lobby\\fallingarrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\enemy\\cockroachanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\cockroachanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\enemy\\cockroachchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\cockroachchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +27,28 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\arenamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\player\\insecticideability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\insecticideability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\enemy\\flyingcockroachai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\flyingcockroachai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\insecticidemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\insecticidemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\enemy\\bigcockroachsplit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\bigcockroachsplit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\insecticidepickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\insecticidepickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\waterhazardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\waterhazardmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\waterhazardoutlet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\waterhazardoutlet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\enemy\\enemyattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,8 +59,16 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\enemy\\bigcockroachsplit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\bigcockroachsplit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\lshapeobstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\lshapeobstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\enemy\\flyingcockroachai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\flyingcockroachai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\fallinghazard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\y3s1\\fyp\\project-anima\\assets\\scripts\\obstacles\\fallingiciclespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstacles\\fallingiciclespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -98,11 +130,209 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArrowSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Lobby\\ArrowSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Lobby\\ArrowSpawner.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Lobby\\ArrowSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Lobby\\ArrowSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T08:58:49.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FallingArrow.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Lobby\\FallingArrow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Lobby\\FallingArrow.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Lobby\\FallingArrow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Lobby\\FallingArrow.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T08:48:32.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CockroachAnimator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\CockroachAnimator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\CockroachAnimator.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\CockroachAnimator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\CockroachAnimator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T07:08:01.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InsecticidePickup.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\InsecticidePickup.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\InsecticidePickup.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\InsecticidePickup.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\InsecticidePickup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:35:47.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InsecticideManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\InsecticideManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\InsecticideManager.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\InsecticideManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\InsecticideManager.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAIwFcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:34:50.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WaterHazardManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\WaterHazardManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\WaterHazardManager.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\WaterHazardManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\WaterHazardManager.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA/wDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:14:54.382Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "EnemyHealth.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyHealth.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyHealth.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAAwKkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T13:17:28.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CockroachChase.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\CockroachChase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\CockroachChase.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\CockroachChase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\CockroachChase.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAAwLkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T13:48:43.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InsecticideAbility.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\InsecticideAbility.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\InsecticideAbility.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\InsecticideAbility.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\InsecticideAbility.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAIwKEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:36:23.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArenaManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\ArenaManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\ArenaManager.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\ArenaManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\ArenaManager.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAACoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T13:21:35.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WaterHazardOutlet.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\WaterHazardOutlet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\WaterHazardOutlet.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\WaterHazardOutlet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\WaterHazardOutlet.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAqwGIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:15:27.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EnemyMovement.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyMovement.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyMovement.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T13:17:30.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerHealth.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAswG0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T10:35:03.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BigCockroachSplit.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\BigCockroachSplit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\BigCockroachSplit.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\BigCockroachSplit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\BigCockroachSplit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T13:22:49.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EnemyAttack.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyAttack.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyAttack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T13:17:24.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LShapeObstacle.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\LShapeObstacle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\LShapeObstacle.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\LShapeObstacle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\LShapeObstacle.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAkwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T07:18:32.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "FlyingCockroachAI.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\FlyingCockroachAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\FlyingCockroachAI.cs",
@@ -114,80 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CockroachChase.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\CockroachChase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\CockroachChase.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\CockroachChase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\CockroachChase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:48:43.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BigCockroachSplit.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\BigCockroachSplit.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\BigCockroachSplit.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\BigCockroachSplit.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\BigCockroachSplit.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAIwDQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:22:49.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ArenaManager.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\ArenaManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\ArenaManager.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\ArenaManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\ArenaManager.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAqwJ8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:21:35.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnemyMovement.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyMovement.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyMovement.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAowEgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:17:30.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EnemyHealth.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyHealth.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyHealth.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyHealth.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAIwGAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:17:28.347Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EnemyAttack.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyAttack.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Enemy\\EnemyAttack.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyAttack.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAkwCMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:17:24.284Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "CameraZoneSwitch.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Background\\CameraZoneSwitch.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Background\\CameraZoneSwitch.cs",
@@ -199,19 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LShapeObstacle.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\LShapeObstacle.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\LShapeObstacle.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\LShapeObstacle.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\LShapeObstacle.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAIwM4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T07:18:32.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "PressurePlateCameraFocus.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\PressurePlateCameraFocus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\PressurePlateCameraFocus.cs",
@@ -223,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "IcicleIdleMotion.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\IcicleIdleMotion.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\IcicleIdleMotion.cs",
@@ -235,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "FallingIcicleSpawner.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingIcicleSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\FallingIcicleSpawner.cs",
@@ -247,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAttack.cs",
@@ -259,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "FallingPlatform.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingPlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\FallingPlatform.cs",
@@ -271,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "FallingIcicle.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingIcicle.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\FallingIcicle.cs",
@@ -283,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "IcePrison.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\IcePrison.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\IcePrison.cs",
@@ -295,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "TriggeredPlatform.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\TriggeredPlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\TriggeredPlatform.cs",
@@ -307,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "PressurePlate.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\PressurePlate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\PressurePlate.cs",
@@ -319,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "IceBlock.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\IceBlock.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\IceBlock.cs",
@@ -331,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\AudioManager\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager\\AudioManager.cs",
@@ -343,19 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PlayerHealth.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealth.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Player\\PlayerHealth.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerHealth.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T10:35:03.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "FallingHazard.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Y3S1\\FYP\\Project-Anima\\Assets\\Scripts\\Obstacles\\FallingHazard.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\FallingHazard.cs",

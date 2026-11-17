@@ -10,20 +10,26 @@ public class ArenaManager : MonoBehaviour
     public Transform leftSpawnPoint;
     public Transform rightSpawnPoint;
 
-    [Header("Stage 1 - Normal Cockroaches")]
+    [Header("Enemy Prefabs")]
     public GameObject normalCockroachPrefab;
+    public GameObject bigCockroachPrefab;
+    public GameObject flyingCockroachPrefab;
+
+    [Header("Stage 1 - Normal Cockroaches")]
     public int normalCountPerSide = 3;
 
-    [Header("Stage 2 - Big Cockroaches")]
-    public GameObject bigCockroachPrefab;
+    [Header("Stage 2 - Normal + Big Cockroaches")]
+    public int stage2NormalCountPerSide = 2;
     public int bigCockroachCount = 2;
 
-    [Header("Stage 3 - Flying Cockroaches")]
-    public GameObject flyingCockroachPrefab;
+    [Header("Stage 3 - All Cockroaches")]
+    public int stage3NormalCountPerSide = 2;
+    public int stage3BigCockroachCount = 2;
     public int flyingCountPerSide = 3;
 
     [Header("UI")]
     public TMP_Text stageText;
+    public TMP_Text enemyCountText;
     public GameObject victoryPanel;
 
     [Header("Stage Settings")]
@@ -46,6 +52,8 @@ public class ArenaManager : MonoBehaviour
         if (victoryPanel != null)
             victoryPanel.SetActive(false);
 
+        UpdateEnemyCountUI();
+
         StartStage(1);
     }
 
@@ -61,15 +69,18 @@ public class ArenaManager : MonoBehaviour
         switch (currentStage)
         {
             case 1:
-                SpawnFromBothSides(normalCockroachPrefab, normalCountPerSide);
+                StartCoroutine(SpawnFromBothSidesRoutine(
+                    normalCockroachPrefab,
+                    normalCountPerSide
+                ));
                 break;
 
             case 2:
-                SpawnMultiple(bigCockroachPrefab, bigCockroachCount);
+                StartCoroutine(SpawnStage2Routine());
                 break;
 
             case 3:
-                SpawnFromBothSides(flyingCockroachPrefab, flyingCountPerSide);
+                StartCoroutine(SpawnStage3Routine());
                 break;
 
             default:
@@ -77,15 +88,55 @@ public class ArenaManager : MonoBehaviour
                 break;
         }
 
+        UpdateEnemyCountUI();
         CheckStageCleared();
     }
 
-    void SpawnFromBothSides(GameObject prefab, int countPerSide)
+    IEnumerator SpawnStage2Routine()
     {
-        StartCoroutine(SpawnFromBothSidesRoutine(prefab, countPerSide));
+        yield return StartCoroutine(
+            SpawnFromBothSidesRoutine(
+                normalCockroachPrefab,
+                stage2NormalCountPerSide
+            )
+        );
+
+        yield return StartCoroutine(
+            SpawnMultipleRoutine(
+                bigCockroachPrefab,
+                bigCockroachCount
+            )
+        );
     }
 
-    IEnumerator SpawnFromBothSidesRoutine(GameObject prefab, int countPerSide)
+    IEnumerator SpawnStage3Routine()
+    {
+        yield return StartCoroutine(
+            SpawnFromBothSidesRoutine(
+                normalCockroachPrefab,
+                stage3NormalCountPerSide
+            )
+        );
+
+        yield return StartCoroutine(
+            SpawnMultipleRoutine(
+                bigCockroachPrefab,
+                stage3BigCockroachCount
+            )
+        );
+
+        yield return StartCoroutine(
+            SpawnFromBothSidesRoutine(
+                flyingCockroachPrefab,
+                flyingCountPerSide
+            )
+        );
+    }
+
+    IEnumerator SpawnFromBothSidesRoutine(
+        GameObject prefab,
+        int countPerSide
+    )
     {
         int total = countPerSide * 2;
 
@@ -99,7 +150,6 @@ public class ArenaManager : MonoBehaviour
             {
                 Vector3 position = spawnPoint.position;
 
-                // Randomize the spawn position slightly along the X axis.
                 position.x += Random.Range(
                     -spawnRandomOffsetX,
                     spawnRandomOffsetX
@@ -112,7 +162,7 @@ public class ArenaManager : MonoBehaviour
         }
     }
 
-    void SpawnMultiple(GameObject prefab, int count)
+    IEnumerator SpawnMultipleRoutine(GameObject prefab, int count)
     {
         for (int i = 0; i < count; i++)
         {
@@ -121,6 +171,8 @@ public class ArenaManager : MonoBehaviour
                 : rightSpawnPoint;
 
             SpawnEnemy(prefab, point);
+
+            yield return new WaitForSeconds(spawnInterval);
         }
     }
 
@@ -128,7 +180,9 @@ public class ArenaManager : MonoBehaviour
     {
         if (prefab == null || spawnPoint == null)
         {
-            Debug.LogWarning("ArenaManager: Prefab or spawn point is missing.");
+            Debug.LogWarning(
+                "ArenaManager: Prefab or spawn point is missing."
+            );
             return null;
         }
 
@@ -143,10 +197,19 @@ public class ArenaManager : MonoBehaviour
         return enemy;
     }
 
-    public GameObject SpawnEnemy(GameObject prefab, Transform spawnPoint, Vector3 position)
+    public GameObject SpawnEnemy(
+        GameObject prefab,
+        Transform spawnPoint,
+        Vector3 position
+    )
     {
         if (prefab == null || spawnPoint == null)
+        {
+            Debug.LogWarning(
+                "ArenaManager: Prefab or spawn point is missing."
+            );
             return null;
+        }
 
         GameObject enemy = Instantiate(
             prefab,
@@ -170,6 +233,8 @@ public class ArenaManager : MonoBehaviour
 
         if (health != null)
             health.arenaManager = this;
+
+        UpdateEnemyCountUI();
     }
 
     public void UnregisterEnemy(GameObject enemy)
@@ -178,7 +243,19 @@ public class ArenaManager : MonoBehaviour
             return;
 
         activeEnemies.Remove(enemy);
+
+        UpdateEnemyCountUI();
+
         CheckStageCleared();
+    }
+
+    void UpdateEnemyCountUI()
+    {
+        if (enemyCountText != null)
+        {
+            enemyCountText.text =
+                "Enemies: " + activeEnemies.Count;
+        }
     }
 
     void CheckStageCleared()
@@ -210,6 +287,9 @@ public class ArenaManager : MonoBehaviour
 
         if (stageText != null)
             stageText.text = "Victory!";
+
+        if (enemyCountText != null)
+            enemyCountText.text = "Enemies: 0";
 
         if (victoryPanel != null)
             victoryPanel.SetActive(true);

@@ -23,6 +23,9 @@ public class EnemyHealth : MonoBehaviour
     [Header("Arena")]
     public ArenaManager arenaManager;
 
+    [Header("Void Death")]
+    public float voidDeathY = -10f;
+
     private bool isDead;
 
     void Start()
@@ -51,16 +54,29 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (transform.position.y < voidDeathY)
+        {
+            Die();
+        }
+    }
+
     public void TakeDamage(int damage, Vector3 hitPoint)
     {
         if (isDead)
             return;
 
         currentHealth -= damage;
-
         ApplyKnockback(hitPoint);
-
         StartCoroutine(HitFlash());
+
+        CockroachAnimator cockroachAnimator = GetComponent<CockroachAnimator>();
+
+        if (cockroachAnimator != null && currentHealth > 0)
+        {
+            cockroachAnimator.PlayHurt();
+        }
 
         if (currentHealth <= 0)
             Die();
@@ -129,15 +145,26 @@ public class EnemyHealth : MonoBehaviour
 
         isDead = true;
 
-        // Big cockroach spawns small cockroaches before it is removed.
+        StartCoroutine(DieRoutine());
+    }
+
+    IEnumerator DieRoutine()
+    {
+        // Big Cockroach 死亡时生成小蟑螂
         BigCockroachSplit split = GetComponent<BigCockroachSplit>();
 
         if (split != null)
             split.SpawnSmallCockroaches();
 
-        // Remove this enemy from the arena's alive count.
+        // 从 ArenaManager 的敌人数量中移除
         if (arenaManager != null)
             arenaManager.UnregisterEnemy(gameObject);
+
+        // 播放 Dead 动画，等待播放完成
+        CockroachAnimator cockroachAnimator = GetComponent<CockroachAnimator>();
+
+        if (cockroachAnimator != null)
+            yield return StartCoroutine(cockroachAnimator.PlayDeadAndWait());
 
         Destroy(gameObject);
     }
