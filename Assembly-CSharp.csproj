@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Lobby\FallingArrow.cs" />
     <Compile Include="Assets\Scripts\Obstacles\FallingHazard.cs" />
     <Compile Include="Assets\Scripts\Obstacles\PressurePlate.cs" />
+    <Compile Include="Assets\Scripts\Lobby\ArrowInput.cs" />
     <Compile Include="Assets\Scripts\Background\ParallaxLayer.cs" />
     <Compile Include="Assets\Scripts\Enemy\FlyingCockroachAI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Enemy\CockroachAnimator.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Lobby\RhythmGameManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Obstacles\TriggeredPlatform.cs" />
     <Compile Include="Assets\Scripts\PauseMenu\PauseMenu.cs" />

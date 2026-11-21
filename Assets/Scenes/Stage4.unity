@@ -947,7 +947,7 @@ SpriteRenderer:
   m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1816725168, guid: 85f2b261dad772e4986e4ee3106617a7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.8598378, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1270,9 +1270,9 @@ MonoBehaviour:
   normalCockroachPrefab: {fileID: 7856756504584830530, guid: 7dff41060579c8546bae87747bc5cfe7, type: 3}
   bigCockroachPrefab: {fileID: 7856756504584830530, guid: 72ae91966ac5df9468fb9c88d770d7a8, type: 3}
   flyingCockroachPrefab: {fileID: 7856756504584830530, guid: b474b5e78594d41448c9e64bdca53e09, type: 3}
-  normalCountPerSide: 2
-  stage2NormalCountPerSide: 2
-  bigCockroachCount: 2
+  normalCountPerSide: 0
+  stage2NormalCountPerSide: 0
+  bigCockroachCount: 0
   stage3NormalCountPerSide: 2
   stage3BigCockroachCount: 2
   flyingCountPerSide: 2
@@ -5901,7 +5901,7 @@ SpriteRenderer:
   m_SortingOrder: -10
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: bc50934a71a39a345beaed3f93e061fd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.9644203, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
